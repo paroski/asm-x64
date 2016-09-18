@@ -113,37 +113,37 @@ int main()
 
     // -------------------------- R (dword) -----------------------------
 
-    a.incd(reg::eax);
-    a.decd(reg::eax);
-    a.notd(reg::eax);
-    a.negd(reg::eax);
-    a.muld(reg::eax);
-    a.divd(reg::eax);
-    a.idivd(reg::eax);
-    a.imuld(reg::eax);
-    a.rold(reg::eax);
-    a.rord(reg::eax);
-    a.rcld(reg::eax);
-    a.rcrd(reg::eax);
-    a.shld(reg::eax);
-    a.shrd(reg::eax);
-    a.sard(reg::eax);
+    a.incl(reg::eax);
+    a.decl(reg::eax);
+    a.notl(reg::eax);
+    a.negl(reg::eax);
+    a.mull(reg::eax);
+    a.divl(reg::eax);
+    a.idivl(reg::eax);
+    a.imull(reg::eax);
+    a.roll(reg::eax);
+    a.rorl(reg::eax);
+    a.rcll(reg::eax);
+    a.rcrl(reg::eax);
+    a.shll(reg::eax);
+    a.shrl(reg::eax);
+    a.sarl(reg::eax);
 
-    a.incd(reg::r8d);
-    a.decd(reg::r8d);
-    a.notd(reg::r8d);
-    a.negd(reg::r8d);
-    a.muld(reg::r8d);
-    a.divd(reg::r8d);
-    a.idivd(reg::r8d);
-    a.imuld(reg::r8d);
-    a.rold(reg::r8d);
-    a.rord(reg::r8d);
-    a.rcld(reg::r8d);
-    a.rcrd(reg::r8d);
-    a.shld(reg::r8d);
-    a.shrd(reg::r8d);
-    a.sard(reg::r8d);
+    a.incl(reg::r8d);
+    a.decl(reg::r8d);
+    a.notl(reg::r8d);
+    a.negl(reg::r8d);
+    a.mull(reg::r8d);
+    a.divl(reg::r8d);
+    a.idivl(reg::r8d);
+    a.imull(reg::r8d);
+    a.roll(reg::r8d);
+    a.rorl(reg::r8d);
+    a.rcll(reg::r8d);
+    a.rcrl(reg::r8d);
+    a.shll(reg::r8d);
+    a.shrl(reg::r8d);
+    a.sarl(reg::r8d);
 
     // -------------------------- R (word) -----------------------------
 
@@ -309,37 +309,37 @@ int main()
 
     // -------------------------- M (dword) -----------------------------
 
-    a.incd(reg::rax[-123]);
-    a.decd(reg::rax[-123]);
-    a.notd(reg::rax[-123]);
-    a.negd(reg::rax[-123]);
-    a.muld(reg::rax[-123]);
-    a.divd(reg::rax[-123]);
-    a.idivd(reg::rax[-123]);
-    a.imuld(reg::rax[-123]);
-    a.rold(reg::rax[-123]);
-    a.rord(reg::rax[-123]);
-    a.rcld(reg::rax[-123]);
-    a.rcrd(reg::rax[-123]);
-    a.shld(reg::rax[-123]);
-    a.shrd(reg::rax[-123]);
-    a.sard(reg::rax[-123]);
+    a.incl(reg::rax[-123]);
+    a.decl(reg::rax[-123]);
+    a.notl(reg::rax[-123]);
+    a.negl(reg::rax[-123]);
+    a.mull(reg::rax[-123]);
+    a.divl(reg::rax[-123]);
+    a.idivl(reg::rax[-123]);
+    a.imull(reg::rax[-123]);
+    a.roll(reg::rax[-123]);
+    a.rorl(reg::rax[-123]);
+    a.rcll(reg::rax[-123]);
+    a.rcrl(reg::rax[-123]);
+    a.shll(reg::rax[-123]);
+    a.shrl(reg::rax[-123]);
+    a.sarl(reg::rax[-123]);
 
-    a.incd(reg::r13[-123]);
-    a.decd(reg::r13[-123]);
-    a.notd(reg::r13[-123]);
-    a.negd(reg::r13[-123]);
-    a.muld(reg::r13[-123]);
-    a.divd(reg::r13[-123]);
-    a.idivd(reg::r13[-123]);
-    a.imuld(reg::r13[-123]);
-    a.rold(reg::r13[-123]);
-    a.rord(reg::r13[-123]);
-    a.rcld(reg::r13[-123]);
-    a.rcrd(reg::r13[-123]);
-    a.shld(reg::r13[-123]);
-    a.shrd(reg::r13[-123]);
-    a.sard(reg::r13[-123]);
+    a.incl(reg::r13[-123]);
+    a.decl(reg::r13[-123]);
+    a.notl(reg::r13[-123]);
+    a.negl(reg::r13[-123]);
+    a.mull(reg::r13[-123]);
+    a.divl(reg::r13[-123]);
+    a.idivl(reg::r13[-123]);
+    a.imull(reg::r13[-123]);
+    a.roll(reg::r13[-123]);
+    a.rorl(reg::r13[-123]);
+    a.rcll(reg::r13[-123]);
+    a.rcrl(reg::r13[-123]);
+    a.shll(reg::r13[-123]);
+    a.shrl(reg::r13[-123]);
+    a.sarl(reg::r13[-123]);
 
     // -------------------------- M (word) -----------------------------
 
@@ -562,92 +562,92 @@ int main()
 
     // -------------------------- RR (dword) -----------------------------
 
-    a.xchgd(reg::ecx, reg::edi);
-    a.addd(reg::ecx, reg::edi);
-    a.subd(reg::ecx, reg::edi);
-    a.andd(reg::ecx, reg::edi);
-    a.ord(reg::ecx, reg::edi);
-    a.xord(reg::ecx, reg::edi);
-    a.cmpd(reg::ecx, reg::edi);
-    a.adcd(reg::ecx, reg::edi);
-    a.sbbd(reg::ecx, reg::edi);
-    a.movd(reg::ecx, reg::edi);
-    a.testd(reg::ecx, reg::edi);
-    a.imuld(reg::ecx, reg::edi);
-    a.xaddd(reg::ecx, reg::edi);
-    a.cmpxchgd(reg::ecx, reg::edi);
-    a.movzxwd(reg::cx, reg::edi); // src is always word size
-    a.movzxbd(reg::cl, reg::edi); // src is always byte size
-    a.movsxwd(reg::cx, reg::edi); // src is always word size
-    a.movsxbd(reg::cl, reg::edi); // src is always byte size
-    a.shldd(reg::eax, reg::edi);
-    a.shrdd(reg::eax, reg::edi);
-    a.popcntd(reg::eax, reg::edi);
+    a.xchgl(reg::ecx, reg::edi);
+    a.addl(reg::ecx, reg::edi);
+    a.subl(reg::ecx, reg::edi);
+    a.andl(reg::ecx, reg::edi);
+    a.orl(reg::ecx, reg::edi);
+    a.xorl(reg::ecx, reg::edi);
+    a.cmpl(reg::ecx, reg::edi);
+    a.adcl(reg::ecx, reg::edi);
+    a.sbbl(reg::ecx, reg::edi);
+    a.movl(reg::ecx, reg::edi);
+    a.testl(reg::ecx, reg::edi);
+    a.imull(reg::ecx, reg::edi);
+    a.xaddl(reg::ecx, reg::edi);
+    a.cmpxchgl(reg::ecx, reg::edi);
+    a.movzxwl(reg::cx, reg::edi); // src is always word size
+    a.movzxbl(reg::cl, reg::edi); // src is always byte size
+    a.movsxwl(reg::cx, reg::edi); // src is always word size
+    a.movsxbl(reg::cl, reg::edi); // src is always byte size
+    a.shldl(reg::eax, reg::edi);
+    a.shrdl(reg::eax, reg::edi);
+    a.popcntl(reg::eax, reg::edi);
 
-    a.cmovccd(CC_E, reg::ecx, reg::edi);
+    a.cmovccl(CC_E, reg::ecx, reg::edi);
 
-    a.movd(reg::ecx, reg::xmm7);
-    a.movd(reg::xmm1, reg::edi);
-    a.cvtsi2sdd(reg::ecx, reg::xmm7);
-    a.cvttsd2sid(reg::xmm1, reg::edi);
+    a.movl(reg::ecx, reg::xmm7);
+    a.movl(reg::xmm1, reg::edi);
+    a.cvtsi2sdl(reg::ecx, reg::xmm7);
+    a.cvttsd2sil(reg::xmm1, reg::edi);
 
-    a.xchgd(reg::ecx, reg::r12d);
-    a.addd(reg::ecx, reg::r12d);
-    a.subd(reg::ecx, reg::r12d);
-    a.andd(reg::ecx, reg::r12d);
-    a.ord(reg::ecx, reg::r12d);
-    a.xord(reg::ecx, reg::r12d);
-    a.cmpd(reg::ecx, reg::r12d);
-    a.adcd(reg::ecx, reg::r12d);
-    a.sbbd(reg::ecx, reg::r12d);
-    a.movd(reg::ecx, reg::r12d);
-    a.testd(reg::ecx, reg::r12d);
-    a.imuld(reg::ecx, reg::r12d);
-    a.xaddd(reg::ecx, reg::r12d);
-    a.cmpxchgd(reg::ecx, reg::r12d);
-    a.movzxwd(reg::cx, reg::r12d); // src is always word size
-    a.movzxbd(reg::cl, reg::r12d); // src is always byte size
-    a.movsxwd(reg::cx, reg::r12d); // src is always word size
-    a.movsxbd(reg::cl, reg::r12d); // src is always byte size
-    a.shldd(reg::eax, reg::r12d);
-    a.shrdd(reg::eax, reg::r12d);
-    a.popcntd(reg::eax, reg::r12d);
+    a.xchgl(reg::ecx, reg::r12d);
+    a.addl(reg::ecx, reg::r12d);
+    a.subl(reg::ecx, reg::r12d);
+    a.andl(reg::ecx, reg::r12d);
+    a.orl(reg::ecx, reg::r12d);
+    a.xorl(reg::ecx, reg::r12d);
+    a.cmpl(reg::ecx, reg::r12d);
+    a.adcl(reg::ecx, reg::r12d);
+    a.sbbl(reg::ecx, reg::r12d);
+    a.movl(reg::ecx, reg::r12d);
+    a.testl(reg::ecx, reg::r12d);
+    a.imull(reg::ecx, reg::r12d);
+    a.xaddl(reg::ecx, reg::r12d);
+    a.cmpxchgl(reg::ecx, reg::r12d);
+    a.movzxwl(reg::cx, reg::r12d); // src is always word size
+    a.movzxbl(reg::cl, reg::r12d); // src is always byte size
+    a.movsxwl(reg::cx, reg::r12d); // src is always word size
+    a.movsxbl(reg::cl, reg::r12d); // src is always byte size
+    a.shldl(reg::eax, reg::r12d);
+    a.shrdl(reg::eax, reg::r12d);
+    a.popcntl(reg::eax, reg::r12d);
 
-    a.cmovccd(CC_E, reg::ecx, reg::r12d);
+    a.cmovccl(CC_E, reg::ecx, reg::r12d);
 
-    a.movd(reg::ecx, reg::xmm12);
-    a.movd(reg::xmm1, reg::r12d);
-    a.cvtsi2sdd(reg::ecx, reg::xmm12);
-    a.cvttsd2sid(reg::xmm1, reg::r12d);
+    a.movl(reg::ecx, reg::xmm12);
+    a.movl(reg::xmm1, reg::r12d);
+    a.cvtsi2sdl(reg::ecx, reg::xmm12);
+    a.cvttsd2sil(reg::xmm1, reg::r12d);
 
-    a.xchgd(reg::r8d, reg::r12d);
-    a.addd(reg::r8d, reg::r12d);
-    a.subd(reg::r8d, reg::r12d);
-    a.andd(reg::r8d, reg::r12d);
-    a.ord(reg::r8d, reg::r12d);
-    a.xord(reg::r8d, reg::r12d);
-    a.cmpd(reg::r8d, reg::r12d);
-    a.adcd(reg::r8d, reg::r12d);
-    a.sbbd(reg::r8d, reg::r12d);
-    a.movd(reg::r8d, reg::r12d);
-    a.testd(reg::r8d, reg::r12d);
-    a.imuld(reg::r8d, reg::r12d);
-    a.xaddd(reg::r8d, reg::r12d);
-    a.cmpxchgd(reg::r8d, reg::r12d);
-    a.movzxwd(reg::r8w, reg::r12d); // src is always word size
-    a.movzxbd(reg::r8b, reg::r12d); // src is always byte size
-    a.movsxwd(reg::r8w, reg::r12d); // src is always word size
-    a.movsxbd(reg::r8b, reg::r12d); // src is always byte size
-    a.shldd(reg::r8d, reg::r12d);
-    a.shrdd(reg::r8d, reg::r12d);
-    a.popcntd(reg::r8d, reg::r12d);
+    a.xchgl(reg::r8d, reg::r12d);
+    a.addl(reg::r8d, reg::r12d);
+    a.subl(reg::r8d, reg::r12d);
+    a.andl(reg::r8d, reg::r12d);
+    a.orl(reg::r8d, reg::r12d);
+    a.xorl(reg::r8d, reg::r12d);
+    a.cmpl(reg::r8d, reg::r12d);
+    a.adcl(reg::r8d, reg::r12d);
+    a.sbbl(reg::r8d, reg::r12d);
+    a.movl(reg::r8d, reg::r12d);
+    a.testl(reg::r8d, reg::r12d);
+    a.imull(reg::r8d, reg::r12d);
+    a.xaddl(reg::r8d, reg::r12d);
+    a.cmpxchgl(reg::r8d, reg::r12d);
+    a.movzxwl(reg::r8w, reg::r12d); // src is always word size
+    a.movzxbl(reg::r8b, reg::r12d); // src is always byte size
+    a.movsxwl(reg::r8w, reg::r12d); // src is always word size
+    a.movsxbl(reg::r8b, reg::r12d); // src is always byte size
+    a.shldl(reg::r8d, reg::r12d);
+    a.shrdl(reg::r8d, reg::r12d);
+    a.popcntl(reg::r8d, reg::r12d);
 
-    a.cmovccd(CC_E, reg::r8d, reg::r12d);
+    a.cmovccl(CC_E, reg::r8d, reg::r12d);
 
-    a.movd(reg::r8d, reg::xmm12);
-    a.movd(reg::xmm8, reg::r12d);
-    a.cvtsi2sdd(reg::r8d, reg::xmm12);
-    a.cvttsd2sid(reg::xmm8, reg::r12d);
+    a.movl(reg::r8d, reg::xmm12);
+    a.movl(reg::xmm8, reg::r12d);
+    a.cvtsi2sdl(reg::r8d, reg::xmm12);
+    a.cvttsd2sil(reg::xmm8, reg::r12d);
 
     // -------------------------- RR (word) -----------------------------
 
@@ -862,73 +862,73 @@ int main()
 
     // -------------------------- RM (dword) -----------------------------
 
-    a.xchgd(reg::ecx, reg::rax[-123]);
-    a.addd(reg::ecx, reg::rax[-123]);
-    a.subd(reg::ecx, reg::rax[-123]);
-    a.andd(reg::ecx, reg::rax[-123]);
-    a.ord(reg::ecx, reg::rax[-123]);
-    a.xord(reg::ecx, reg::rax[-123]);
-    a.cmpd(reg::ecx, reg::rax[-123]);
-    a.adcd(reg::ecx, reg::rax[-123]);
-    a.sbbd(reg::ecx, reg::rax[-123]);
-    a.movd(reg::ecx, reg::rax[-123]);
-    a.testd(reg::ecx, reg::rax[-123]);
-    a.xaddd(reg::ecx, reg::rax[-123]);
-    a.cmpxchgd(reg::ecx, reg::rax[-123]);
-    a.shldd(reg::eax, reg::rax[-123]);
-    a.shrdd(reg::eax, reg::rax[-123]);
-    a.movd(reg::xmm1, reg::rax[-123]);
+    a.xchgl(reg::ecx, reg::rax[-123]);
+    a.addl(reg::ecx, reg::rax[-123]);
+    a.subl(reg::ecx, reg::rax[-123]);
+    a.andl(reg::ecx, reg::rax[-123]);
+    a.orl(reg::ecx, reg::rax[-123]);
+    a.xorl(reg::ecx, reg::rax[-123]);
+    a.cmpl(reg::ecx, reg::rax[-123]);
+    a.adcl(reg::ecx, reg::rax[-123]);
+    a.sbbl(reg::ecx, reg::rax[-123]);
+    a.movl(reg::ecx, reg::rax[-123]);
+    a.testl(reg::ecx, reg::rax[-123]);
+    a.xaddl(reg::ecx, reg::rax[-123]);
+    a.cmpxchgl(reg::ecx, reg::rax[-123]);
+    a.shldl(reg::eax, reg::rax[-123]);
+    a.shrdl(reg::eax, reg::rax[-123]);
+    a.movl(reg::xmm1, reg::rax[-123]);
 
-    a.xchgd(reg::r8d, reg::rax[-123]);
-    a.addd(reg::r8d, reg::rax[-123]);
-    a.subd(reg::r8d, reg::rax[-123]);
-    a.andd(reg::r8d, reg::rax[-123]);
-    a.ord(reg::r8d, reg::rax[-123]);
-    a.xord(reg::r8d, reg::rax[-123]);
-    a.cmpd(reg::r8d, reg::rax[-123]);
-    a.adcd(reg::r8d, reg::rax[-123]);
-    a.sbbd(reg::r8d, reg::rax[-123]);
-    a.movd(reg::r8d, reg::rax[-123]);
-    a.testd(reg::r8d, reg::rax[-123]);
-    a.xaddd(reg::r8d, reg::rax[-123]);
-    a.cmpxchgd(reg::r8d, reg::rax[-123]);
-    a.shldd(reg::r8d, reg::rax[-123]);
-    a.shrdd(reg::r8d, reg::rax[-123]);
-    a.movd(reg::xmm8, reg::rax[-123]);
+    a.xchgl(reg::r8d, reg::rax[-123]);
+    a.addl(reg::r8d, reg::rax[-123]);
+    a.subl(reg::r8d, reg::rax[-123]);
+    a.andl(reg::r8d, reg::rax[-123]);
+    a.orl(reg::r8d, reg::rax[-123]);
+    a.xorl(reg::r8d, reg::rax[-123]);
+    a.cmpl(reg::r8d, reg::rax[-123]);
+    a.adcl(reg::r8d, reg::rax[-123]);
+    a.sbbl(reg::r8d, reg::rax[-123]);
+    a.movl(reg::r8d, reg::rax[-123]);
+    a.testl(reg::r8d, reg::rax[-123]);
+    a.xaddl(reg::r8d, reg::rax[-123]);
+    a.cmpxchgl(reg::r8d, reg::rax[-123]);
+    a.shldl(reg::r8d, reg::rax[-123]);
+    a.shrdl(reg::r8d, reg::rax[-123]);
+    a.movl(reg::xmm8, reg::rax[-123]);
 
-    a.xchgd(reg::ecx, reg::r13[-123]);
-    a.addd(reg::ecx, reg::r13[-123]);
-    a.subd(reg::ecx, reg::r13[-123]);
-    a.andd(reg::ecx, reg::r13[-123]);
-    a.ord(reg::ecx, reg::r13[-123]);
-    a.xord(reg::ecx, reg::r13[-123]);
-    a.cmpd(reg::ecx, reg::r13[-123]);
-    a.adcd(reg::ecx, reg::r13[-123]);
-    a.sbbd(reg::ecx, reg::r13[-123]);
-    a.movd(reg::ecx, reg::r13[-123]);
-    a.testd(reg::ecx, reg::r13[-123]);
-    a.xaddd(reg::ecx, reg::r13[-123]);
-    a.cmpxchgd(reg::ecx, reg::r13[-123]);
-    a.shldd(reg::eax, reg::r13[-123]);
-    a.shrdd(reg::eax, reg::r13[-123]);
-    a.movd(reg::xmm1, reg::r13[-123]);
+    a.xchgl(reg::ecx, reg::r13[-123]);
+    a.addl(reg::ecx, reg::r13[-123]);
+    a.subl(reg::ecx, reg::r13[-123]);
+    a.andl(reg::ecx, reg::r13[-123]);
+    a.orl(reg::ecx, reg::r13[-123]);
+    a.xorl(reg::ecx, reg::r13[-123]);
+    a.cmpl(reg::ecx, reg::r13[-123]);
+    a.adcl(reg::ecx, reg::r13[-123]);
+    a.sbbl(reg::ecx, reg::r13[-123]);
+    a.movl(reg::ecx, reg::r13[-123]);
+    a.testl(reg::ecx, reg::r13[-123]);
+    a.xaddl(reg::ecx, reg::r13[-123]);
+    a.cmpxchgl(reg::ecx, reg::r13[-123]);
+    a.shldl(reg::eax, reg::r13[-123]);
+    a.shrdl(reg::eax, reg::r13[-123]);
+    a.movl(reg::xmm1, reg::r13[-123]);
 
-    a.xchgd(reg::r8d, reg::r13[-123]);
-    a.addd(reg::r8d, reg::r13[-123]);
-    a.subd(reg::r8d, reg::r13[-123]);
-    a.andd(reg::r8d, reg::r13[-123]);
-    a.ord(reg::r8d, reg::r13[-123]);
-    a.xord(reg::r8d, reg::r13[-123]);
-    a.cmpd(reg::r8d, reg::r13[-123]);
-    a.adcd(reg::r8d, reg::r13[-123]);
-    a.sbbd(reg::r8d, reg::r13[-123]);
-    a.movd(reg::r8d, reg::r13[-123]);
-    a.testd(reg::r8d, reg::r13[-123]);
-    a.xaddd(reg::r8d, reg::r13[-123]);
-    a.cmpxchgd(reg::r8d, reg::r13[-123]);
-    a.shldd(reg::r8d, reg::r13[-123]);
-    a.shrdd(reg::r8d, reg::r13[-123]);
-    a.movd(reg::xmm8, reg::r13[-123]);
+    a.xchgl(reg::r8d, reg::r13[-123]);
+    a.addl(reg::r8d, reg::r13[-123]);
+    a.subl(reg::r8d, reg::r13[-123]);
+    a.andl(reg::r8d, reg::r13[-123]);
+    a.orl(reg::r8d, reg::r13[-123]);
+    a.xorl(reg::r8d, reg::r13[-123]);
+    a.cmpl(reg::r8d, reg::r13[-123]);
+    a.adcl(reg::r8d, reg::r13[-123]);
+    a.sbbl(reg::r8d, reg::r13[-123]);
+    a.movl(reg::r8d, reg::r13[-123]);
+    a.testl(reg::r8d, reg::r13[-123]);
+    a.xaddl(reg::r8d, reg::r13[-123]);
+    a.cmpxchgl(reg::r8d, reg::r13[-123]);
+    a.shldl(reg::r8d, reg::r13[-123]);
+    a.shrdl(reg::r8d, reg::r13[-123]);
+    a.movl(reg::xmm8, reg::r13[-123]);
 
     // -------------------------- RM (word) -----------------------------
 
@@ -1258,101 +1258,101 @@ int main()
 
     // -------------------------- MR (dword) -----------------------------
 
-    a.lead(reg::rax[-123], reg::edi);
-    a.xchgd(reg::rax[-123], reg::edi);
-    a.addd(reg::rax[-123], reg::edi);
-    a.subd(reg::rax[-123], reg::edi);
-    a.andd(reg::rax[-123], reg::edi);
-    a.ord(reg::rax[-123], reg::edi);
-    a.xord(reg::rax[-123], reg::edi);
-    a.cmpd(reg::rax[-123], reg::edi);
-    a.adcd(reg::rax[-123], reg::edi);
-    a.sbbd(reg::rax[-123], reg::edi);
-    a.movd(reg::rax[-123], reg::edi);
-    a.testd(reg::rax[-123], reg::edi);
-    a.imuld(reg::rax[-123], reg::edi);
-    a.movzxwd(reg::rax[-123], reg::edi); // src is always word size
-    a.movzxbd(reg::rax[-123], reg::edi); // src is always byte size
-    a.movsxwd(reg::rax[-123], reg::edi); // src is always word size
-    a.movsxbd(reg::rax[-123], reg::edi); // src is always byte size
+    a.leal(reg::rax[-123], reg::edi);
+    a.xchgl(reg::rax[-123], reg::edi);
+    a.addl(reg::rax[-123], reg::edi);
+    a.subl(reg::rax[-123], reg::edi);
+    a.andl(reg::rax[-123], reg::edi);
+    a.orl(reg::rax[-123], reg::edi);
+    a.xorl(reg::rax[-123], reg::edi);
+    a.cmpl(reg::rax[-123], reg::edi);
+    a.adcl(reg::rax[-123], reg::edi);
+    a.sbbl(reg::rax[-123], reg::edi);
+    a.movl(reg::rax[-123], reg::edi);
+    a.testl(reg::rax[-123], reg::edi);
+    a.imull(reg::rax[-123], reg::edi);
+    a.movzxwl(reg::rax[-123], reg::edi); // src is always word size
+    a.movzxbl(reg::rax[-123], reg::edi); // src is always byte size
+    a.movsxwl(reg::rax[-123], reg::edi); // src is always word size
+    a.movsxbl(reg::rax[-123], reg::edi); // src is always byte size
 
-    a.cmovccd(CC_E, reg::rax[-123], reg::edi);
+    a.cmovccl(CC_E, reg::rax[-123], reg::edi);
 
-    a.movd(reg::rax[-123], reg::xmm7);
-    a.cvtsi2sdd(reg::rax[-123], reg::xmm7);
-    a.cvttsd2sid(reg::rax[-123], reg::edi);
+    a.movl(reg::rax[-123], reg::xmm7);
+    a.cvtsi2sdl(reg::rax[-123], reg::xmm7);
+    a.cvttsd2sil(reg::rax[-123], reg::edi);
 
-    a.lead(reg::rax[-123], reg::r12d);
-    a.xchgd(reg::rax[-123], reg::r12d);
-    a.addd(reg::rax[-123], reg::r12d);
-    a.subd(reg::rax[-123], reg::r12d);
-    a.andd(reg::rax[-123], reg::r12d);
-    a.ord(reg::rax[-123], reg::r12d);
-    a.xord(reg::rax[-123], reg::r12d);
-    a.cmpd(reg::rax[-123], reg::r12d);
-    a.adcd(reg::rax[-123], reg::r12d);
-    a.sbbd(reg::rax[-123], reg::r12d);
-    a.movd(reg::rax[-123], reg::r12d);
-    a.testd(reg::rax[-123], reg::r12d);
-    a.imuld(reg::rax[-123], reg::r12d);
-    a.movzxwd(reg::rax[-123], reg::r12d); // src is always word size
-    a.movzxbd(reg::rax[-123], reg::r12d); // src is always byte size
-    a.movsxwd(reg::rax[-123], reg::r12d); // src is always word size
-    a.movsxbd(reg::rax[-123], reg::r12d); // src is always byte size
+    a.leal(reg::rax[-123], reg::r12d);
+    a.xchgl(reg::rax[-123], reg::r12d);
+    a.addl(reg::rax[-123], reg::r12d);
+    a.subl(reg::rax[-123], reg::r12d);
+    a.andl(reg::rax[-123], reg::r12d);
+    a.orl(reg::rax[-123], reg::r12d);
+    a.xorl(reg::rax[-123], reg::r12d);
+    a.cmpl(reg::rax[-123], reg::r12d);
+    a.adcl(reg::rax[-123], reg::r12d);
+    a.sbbl(reg::rax[-123], reg::r12d);
+    a.movl(reg::rax[-123], reg::r12d);
+    a.testl(reg::rax[-123], reg::r12d);
+    a.imull(reg::rax[-123], reg::r12d);
+    a.movzxwl(reg::rax[-123], reg::r12d); // src is always word size
+    a.movzxbl(reg::rax[-123], reg::r12d); // src is always byte size
+    a.movsxwl(reg::rax[-123], reg::r12d); // src is always word size
+    a.movsxbl(reg::rax[-123], reg::r12d); // src is always byte size
 
-    a.cmovccd(CC_E, reg::rax[-123], reg::r12d);
+    a.cmovccl(CC_E, reg::rax[-123], reg::r12d);
 
-    a.movd(reg::rax[-123], reg::xmm12);
-    a.cvtsi2sdd(reg::rax[-123], reg::xmm12);
-    a.cvttsd2sid(reg::rax[-123], reg::r12d);
+    a.movl(reg::rax[-123], reg::xmm12);
+    a.cvtsi2sdl(reg::rax[-123], reg::xmm12);
+    a.cvttsd2sil(reg::rax[-123], reg::r12d);
 
-    a.lead(reg::r13[-123], reg::edi);
-    a.xchgd(reg::r13[-123], reg::edi);
-    a.addd(reg::r13[-123], reg::edi);
-    a.subd(reg::r13[-123], reg::edi);
-    a.andd(reg::r13[-123], reg::edi);
-    a.ord(reg::r13[-123], reg::edi);
-    a.xord(reg::r13[-123], reg::edi);
-    a.cmpd(reg::r13[-123], reg::edi);
-    a.adcd(reg::r13[-123], reg::edi);
-    a.sbbd(reg::r13[-123], reg::edi);
-    a.movd(reg::r13[-123], reg::edi);
-    a.testd(reg::r13[-123], reg::edi);
-    a.imuld(reg::r13[-123], reg::edi);
-    a.movzxwd(reg::r13[-123], reg::edi); // src is always word size
-    a.movzxbd(reg::r13[-123], reg::edi); // src is always byte size
-    a.movsxwd(reg::r13[-123], reg::edi); // src is always word size
-    a.movsxbd(reg::r13[-123], reg::edi); // src is always byte size
+    a.leal(reg::r13[-123], reg::edi);
+    a.xchgl(reg::r13[-123], reg::edi);
+    a.addl(reg::r13[-123], reg::edi);
+    a.subl(reg::r13[-123], reg::edi);
+    a.andl(reg::r13[-123], reg::edi);
+    a.orl(reg::r13[-123], reg::edi);
+    a.xorl(reg::r13[-123], reg::edi);
+    a.cmpl(reg::r13[-123], reg::edi);
+    a.adcl(reg::r13[-123], reg::edi);
+    a.sbbl(reg::r13[-123], reg::edi);
+    a.movl(reg::r13[-123], reg::edi);
+    a.testl(reg::r13[-123], reg::edi);
+    a.imull(reg::r13[-123], reg::edi);
+    a.movzxwl(reg::r13[-123], reg::edi); // src is always word size
+    a.movzxbl(reg::r13[-123], reg::edi); // src is always byte size
+    a.movsxwl(reg::r13[-123], reg::edi); // src is always word size
+    a.movsxbl(reg::r13[-123], reg::edi); // src is always byte size
 
-    a.cmovccd(CC_E, reg::r13[-123], reg::edi);
+    a.cmovccl(CC_E, reg::r13[-123], reg::edi);
 
-    a.movd(reg::r13[-123], reg::xmm7);
-    a.cvtsi2sdd(reg::r13[-123], reg::xmm7);
-    a.cvttsd2sid(reg::r13[-123], reg::edi);
+    a.movl(reg::r13[-123], reg::xmm7);
+    a.cvtsi2sdl(reg::r13[-123], reg::xmm7);
+    a.cvttsd2sil(reg::r13[-123], reg::edi);
 
-    a.lead(reg::r13[-123], reg::r12d);
-    a.xchgd(reg::r13[-123], reg::r12d);
-    a.addd(reg::r13[-123], reg::r12d);
-    a.subd(reg::r13[-123], reg::r12d);
-    a.andd(reg::r13[-123], reg::r12d);
-    a.ord(reg::r13[-123], reg::r12d);
-    a.xord(reg::r13[-123], reg::r12d);
-    a.cmpd(reg::r13[-123], reg::r12d);
-    a.adcd(reg::r13[-123], reg::r12d);
-    a.sbbd(reg::r13[-123], reg::r12d);
-    a.movd(reg::r13[-123], reg::r12d);
-    a.testd(reg::r13[-123], reg::r12d);
-    a.imuld(reg::r13[-123], reg::r12d);
-    a.movzxwd(reg::r13[-123], reg::r12d); // src is always word size
-    a.movzxbd(reg::r13[-123], reg::r12d); // src is always byte size
-    a.movsxwd(reg::r13[-123], reg::r12d); // src is always word size
-    a.movsxbd(reg::r13[-123], reg::r12d); // src is always byte size
+    a.leal(reg::r13[-123], reg::r12d);
+    a.xchgl(reg::r13[-123], reg::r12d);
+    a.addl(reg::r13[-123], reg::r12d);
+    a.subl(reg::r13[-123], reg::r12d);
+    a.andl(reg::r13[-123], reg::r12d);
+    a.orl(reg::r13[-123], reg::r12d);
+    a.xorl(reg::r13[-123], reg::r12d);
+    a.cmpl(reg::r13[-123], reg::r12d);
+    a.adcl(reg::r13[-123], reg::r12d);
+    a.sbbl(reg::r13[-123], reg::r12d);
+    a.movl(reg::r13[-123], reg::r12d);
+    a.testl(reg::r13[-123], reg::r12d);
+    a.imull(reg::r13[-123], reg::r12d);
+    a.movzxwl(reg::r13[-123], reg::r12d); // src is always word size
+    a.movzxbl(reg::r13[-123], reg::r12d); // src is always byte size
+    a.movsxwl(reg::r13[-123], reg::r12d); // src is always word size
+    a.movsxbl(reg::r13[-123], reg::r12d); // src is always byte size
 
-    a.cmovccd(CC_E, reg::r13[-123], reg::r12d);
+    a.cmovccl(CC_E, reg::r13[-123], reg::r12d);
 
-    a.movd(reg::r13[-123], reg::xmm12);
-    a.cvtsi2sdd(reg::r13[-123], reg::xmm12);
-    a.cvttsd2sid(reg::r13[-123], reg::r12d);
+    a.movl(reg::r13[-123], reg::xmm12);
+    a.cvtsi2sdl(reg::r13[-123], reg::xmm12);
+    a.cvttsd2sil(reg::r13[-123], reg::r12d);
 
     // -------------------------- MR (word) -----------------------------
 
@@ -1556,71 +1556,71 @@ int main()
 
     // -------------------------- IR (dword, 4 byte imm) -----------------------------
 
-    a.addd(0x10000, reg::edi);
-    a.subd(0x10000, reg::edi);
-    a.andd(0x10000, reg::edi);
-    a.ord(0x10000, reg::edi);
-    a.xord(0x10000, reg::edi);
-    a.cmpd(0x10000, reg::edi);
-    a.adcd(0x10000, reg::edi);
-    a.sbbd(0x10000, reg::edi);
-    a.movd(0x10000, reg::edi);
-    a.testd(0x10000, reg::edi);
+    a.addl(0x10000, reg::edi);
+    a.subl(0x10000, reg::edi);
+    a.andl(0x10000, reg::edi);
+    a.orl(0x10000, reg::edi);
+    a.xorl(0x10000, reg::edi);
+    a.cmpl(0x10000, reg::edi);
+    a.adcl(0x10000, reg::edi);
+    a.sbbl(0x10000, reg::edi);
+    a.movl(0x10000, reg::edi);
+    a.testl(0x10000, reg::edi);
 
-    a.addd(0x10000, reg::r12d);
-    a.subd(0x10000, reg::r12d);
-    a.andd(0x10000, reg::r12d);
-    a.ord(0x10000, reg::r12d);
-    a.xord(0x10000, reg::r12d);
-    a.cmpd(0x10000, reg::r12d);
-    a.adcd(0x10000, reg::r12d);
-    a.sbbd(0x10000, reg::r12d);
-    a.movd(0x10000, reg::r12d);
-    a.testd(0x10000, reg::r12d);
+    a.addl(0x10000, reg::r12d);
+    a.subl(0x10000, reg::r12d);
+    a.andl(0x10000, reg::r12d);
+    a.orl(0x10000, reg::r12d);
+    a.xorl(0x10000, reg::r12d);
+    a.cmpl(0x10000, reg::r12d);
+    a.adcl(0x10000, reg::r12d);
+    a.sbbl(0x10000, reg::r12d);
+    a.movl(0x10000, reg::r12d);
+    a.testl(0x10000, reg::r12d);
 
     // -------------------------- IR (dword, byte imm) -----------------------------
 
-    a.addd(-123, reg::edi);
-    a.subd(-123, reg::edi);
-    a.andd(-123, reg::edi);
-    a.ord(-123, reg::edi);
-    a.xord(-123, reg::edi);
-    a.cmpd(-123, reg::edi);
-    a.adcd(-123, reg::edi);
-    a.sbbd(-123, reg::edi);
-    a.rold(31, reg::edi);
-    a.rord(31, reg::edi);
-    a.rcld(31, reg::edi);
-    a.rcrd(31, reg::edi);
-    a.shld(31, reg::edi);
-    a.shrd(31, reg::edi);
-    a.sard(31, reg::edi);
+    a.addl(-123, reg::edi);
+    a.subl(-123, reg::edi);
+    a.andl(-123, reg::edi);
+    a.orl(-123, reg::edi);
+    a.xorl(-123, reg::edi);
+    a.cmpl(-123, reg::edi);
+    a.adcl(-123, reg::edi);
+    a.sbbl(-123, reg::edi);
+    a.roll(31, reg::edi);
+    a.rorl(31, reg::edi);
+    a.rcll(31, reg::edi);
+    a.rcrl(31, reg::edi);
+    a.shll(31, reg::edi);
+    a.shrl(31, reg::edi);
+    a.sarl(31, reg::edi);
 
-    a.addd(-123, reg::r12d);
-    a.subd(-123, reg::r12d);
-    a.andd(-123, reg::r12d);
-    a.ord(-123, reg::r12d);
-    a.xord(-123, reg::r12d);
-    a.cmpd(-123, reg::r12d);
-    a.adcd(-123, reg::r12d);
-    a.sbbd(-123, reg::r12d);
-    a.rold(31, reg::r12d);
-    a.rord(31, reg::r12d);
-    a.rcld(31, reg::r12d);
-    a.rcrd(31, reg::r12d);
-    a.shld(31, reg::r12d);
-    a.shrd(31, reg::r12d);
-    a.sard(31, reg::r12d);
+    a.addl(-123, reg::r12d);
+    a.subl(-123, reg::r12d);
+    a.andl(-123, reg::r12d);
+    a.orl(-123, reg::r12d);
+    a.xorl(-123, reg::r12d);
+    a.cmpl(-123, reg::r12d);
+    a.adcl(-123, reg::r12d);
+    a.sbbl(-123, reg::r12d);
+    a.roll(31, reg::r12d);
+    a.rorl(31, reg::r12d);
+    a.rcll(31, reg::r12d);
+    a.rcrl(31, reg::r12d);
+    a.shll(31, reg::r12d);
+    a.shrl(31, reg::r12d);
+    a.sarl(31, reg::r12d);
 
     // -------------------------- IR (dword, special case) -----------------------------
 
-    a.andd(0x00000000ffffffffLL, reg::edi);
-    a.testd(0x00000000ffffffffLL, reg::edi);
-    a.movd(0x00000000ffffffffLL, reg::edi);
+    a.andl(0x00000000ffffffffLL, reg::edi);
+    a.testl(0x00000000ffffffffLL, reg::edi);
+    a.movl(0x00000000ffffffffLL, reg::edi);
 
-    a.andd(0x00000000ffffffffLL, reg::r12d);
-    a.testd(0x00000000ffffffffLL, reg::r12d);
-    a.movd(0x00000000ffffffffLL, reg::r12d);
+    a.andl(0x00000000ffffffffLL, reg::r12d);
+    a.testl(0x00000000ffffffffLL, reg::r12d);
+    a.movl(0x00000000ffffffffLL, reg::r12d);
 
     // -------------------------- IR (word, 2 byte imm) -----------------------------
 
@@ -1778,61 +1778,61 @@ int main()
 
     // -------------------------- IM (dword, 4 byte imm) -----------------------------
 
-    a.addd(0x10000, reg::rax[-123]);
-    a.subd(0x10000, reg::rax[-123]);
-    a.andd(0x10000, reg::rax[-123]);
-    a.ord(0x10000, reg::rax[-123]);
-    a.xord(0x10000, reg::rax[-123]);
-    a.cmpd(0x10000, reg::rax[-123]);
-    a.adcd(0x10000, reg::rax[-123]);
-    a.sbbd(0x10000, reg::rax[-123]);
-    a.movd(0x10000, reg::rax[-123]);
-    a.testd(0x10000, reg::rax[-123]);
+    a.addl(0x10000, reg::rax[-123]);
+    a.subl(0x10000, reg::rax[-123]);
+    a.andl(0x10000, reg::rax[-123]);
+    a.orl(0x10000, reg::rax[-123]);
+    a.xorl(0x10000, reg::rax[-123]);
+    a.cmpl(0x10000, reg::rax[-123]);
+    a.adcl(0x10000, reg::rax[-123]);
+    a.sbbl(0x10000, reg::rax[-123]);
+    a.movl(0x10000, reg::rax[-123]);
+    a.testl(0x10000, reg::rax[-123]);
 
-    a.addd(0x10000, reg::r13[-123]);
-    a.subd(0x10000, reg::r13[-123]);
-    a.andd(0x10000, reg::r13[-123]);
-    a.ord(0x10000, reg::r13[-123]);
-    a.xord(0x10000, reg::r13[-123]);
-    a.cmpd(0x10000, reg::r13[-123]);
-    a.adcd(0x10000, reg::r13[-123]);
-    a.sbbd(0x10000, reg::r13[-123]);
-    a.movd(0x10000, reg::r13[-123]);
-    a.testd(0x10000, reg::r13[-123]);
+    a.addl(0x10000, reg::r13[-123]);
+    a.subl(0x10000, reg::r13[-123]);
+    a.andl(0x10000, reg::r13[-123]);
+    a.orl(0x10000, reg::r13[-123]);
+    a.xorl(0x10000, reg::r13[-123]);
+    a.cmpl(0x10000, reg::r13[-123]);
+    a.adcl(0x10000, reg::r13[-123]);
+    a.sbbl(0x10000, reg::r13[-123]);
+    a.movl(0x10000, reg::r13[-123]);
+    a.testl(0x10000, reg::r13[-123]);
 
     // -------------------------- IM (dword, byte imm) -----------------------------
 
-    a.addd(-123, reg::rax[-123]);
-    a.subd(-123, reg::rax[-123]);
-    a.andd(-123, reg::rax[-123]);
-    a.ord(-123, reg::rax[-123]);
-    a.xord(-123, reg::rax[-123]);
-    a.cmpd(-123, reg::rax[-123]);
-    a.adcd(-123, reg::rax[-123]);
-    a.sbbd(-123, reg::rax[-123]);
-    a.rold(31, reg::rax[-123]);
-    a.rord(31, reg::rax[-123]);
-    a.rcld(31, reg::rax[-123]);
-    a.rcrd(31, reg::rax[-123]);
-    a.shld(31, reg::rax[-123]);
-    a.shrd(31, reg::rax[-123]);
-    a.sard(31, reg::rax[-123]);
+    a.addl(-123, reg::rax[-123]);
+    a.subl(-123, reg::rax[-123]);
+    a.andl(-123, reg::rax[-123]);
+    a.orl(-123, reg::rax[-123]);
+    a.xorl(-123, reg::rax[-123]);
+    a.cmpl(-123, reg::rax[-123]);
+    a.adcl(-123, reg::rax[-123]);
+    a.sbbl(-123, reg::rax[-123]);
+    a.roll(31, reg::rax[-123]);
+    a.rorl(31, reg::rax[-123]);
+    a.rcll(31, reg::rax[-123]);
+    a.rcrl(31, reg::rax[-123]);
+    a.shll(31, reg::rax[-123]);
+    a.shrl(31, reg::rax[-123]);
+    a.sarl(31, reg::rax[-123]);
 
-    a.addd(-123, reg::r13[-123]);
-    a.subd(-123, reg::r13[-123]);
-    a.andd(-123, reg::r13[-123]);
-    a.ord(-123, reg::r13[-123]);
-    a.xord(-123, reg::r13[-123]);
-    a.cmpd(-123, reg::r13[-123]);
-    a.adcd(-123, reg::r13[-123]);
-    a.sbbd(-123, reg::r13[-123]);
-    a.rold(31, reg::r13[-123]);
-    a.rord(31, reg::r13[-123]);
-    a.rcld(31, reg::r13[-123]);
-    a.rcrd(31, reg::r13[-123]);
-    a.shld(31, reg::r13[-123]);
-    a.shrd(31, reg::r13[-123]);
-    a.sard(31, reg::r13[-123]);
+    a.addl(-123, reg::r13[-123]);
+    a.subl(-123, reg::r13[-123]);
+    a.andl(-123, reg::r13[-123]);
+    a.orl(-123, reg::r13[-123]);
+    a.xorl(-123, reg::r13[-123]);
+    a.cmpl(-123, reg::r13[-123]);
+    a.adcl(-123, reg::r13[-123]);
+    a.sbbl(-123, reg::r13[-123]);
+    a.roll(31, reg::r13[-123]);
+    a.rorl(31, reg::r13[-123]);
+    a.rcll(31, reg::r13[-123]);
+    a.rcrl(31, reg::r13[-123]);
+    a.shll(31, reg::r13[-123]);
+    a.shrl(31, reg::r13[-123]);
+    a.sarl(31, reg::r13[-123]);
 
     // -------------------------- IM (word, 2 byte imm) -----------------------------
 
@@ -1957,25 +1957,25 @@ int main()
 
     // -------------------------- IRR (dword, 4 byte imm) -----------------------------
 
-    a.imuld(0x10000, reg::ecx, reg::edi);
+    a.imull(0x10000, reg::ecx, reg::edi);
 
-    a.imuld(0x10000, reg::ecx, reg::r12d);
+    a.imull(0x10000, reg::ecx, reg::r12d);
 
-    a.imuld(0x10000, reg::r8d, reg::r12d);
+    a.imull(0x10000, reg::r8d, reg::r12d);
 
     // -------------------------- IRR (dword, 1 byte imm) -----------------------------
 
-    a.imuld(-123, reg::ecx, reg::edi);
-    a.shldd(31, reg::ecx, reg::edi);
-    a.shrdd(31, reg::ecx, reg::edi);
+    a.imull(-123, reg::ecx, reg::edi);
+    a.shldl(31, reg::ecx, reg::edi);
+    a.shrdl(31, reg::ecx, reg::edi);
 
-    a.imuld(-123, reg::ecx, reg::r12d);
-    a.shldd(31, reg::ecx, reg::r12d);
-    a.shrdd(31, reg::ecx, reg::r12d);
+    a.imull(-123, reg::ecx, reg::r12d);
+    a.shldl(31, reg::ecx, reg::r12d);
+    a.shrdl(31, reg::ecx, reg::r12d);
 
-    a.imuld(-123, reg::r8d, reg::r12d);
-    a.shldd(31, reg::r8d, reg::r12d);
-    a.shrdd(31, reg::r8d, reg::r12d);
+    a.imull(-123, reg::r8d, reg::r12d);
+    a.shldl(31, reg::r8d, reg::r12d);
+    a.shrdl(31, reg::r8d, reg::r12d);
 
     // -------------------------- IRR (word, 2 byte) -----------------------------
 
@@ -2022,17 +2022,17 @@ int main()
 
     // -------------------------- IMR (dword, 4 byte imm) -----------------------------
 
-    a.imuld(0x10000, reg::rax[-123], reg::edi);
-    a.imuld(0x10000, reg::rax[-123], reg::r12d);
-    a.imuld(0x10000, reg::r13[-123], reg::edi);
-    a.imuld(0x10000, reg::r13[-123], reg::r12d);
+    a.imull(0x10000, reg::rax[-123], reg::edi);
+    a.imull(0x10000, reg::rax[-123], reg::r12d);
+    a.imull(0x10000, reg::r13[-123], reg::edi);
+    a.imull(0x10000, reg::r13[-123], reg::r12d);
 
     // -------------------------- IMR (dword, 1 byte imm) -----------------------------
 
-    a.imuld(-123, reg::rax[-123], reg::edi);
-    a.imuld(-123, reg::rax[-123], reg::r12d);
-    a.imuld(-123, reg::r13[-123], reg::edi);
-    a.imuld(-123, reg::r13[-123], reg::r12d);
+    a.imull(-123, reg::rax[-123], reg::edi);
+    a.imull(-123, reg::rax[-123], reg::r12d);
+    a.imull(-123, reg::r13[-123], reg::edi);
+    a.imull(-123, reg::r13[-123], reg::r12d);
 
     // -------------------------- IMR (word, 2 byte imm) -----------------------------
 
@@ -2061,14 +2061,14 @@ int main()
 
     // -------------------------- IRM (dword, 1 byte imm) -----------------------------
 
-    a.shldd(31, reg::edi, reg::rax[-123]);
-    a.shrdd(31, reg::edi, reg::rax[-123]);
-    a.shldd(31, reg::r12d, reg::rax[-123]);
-    a.shrdd(31, reg::r12d, reg::rax[-123]);
-    a.shldd(31, reg::edi, reg::r13[-123]);
-    a.shrdd(31, reg::edi, reg::r13[-123]);
-    a.shldd(31, reg::r12d, reg::r13[-123]);
-    a.shrdd(31, reg::r12d, reg::r13[-123]);
+    a.shldl(31, reg::edi, reg::rax[-123]);
+    a.shrdl(31, reg::edi, reg::rax[-123]);
+    a.shldl(31, reg::r12d, reg::rax[-123]);
+    a.shrdl(31, reg::r12d, reg::rax[-123]);
+    a.shldl(31, reg::edi, reg::r13[-123]);
+    a.shrdl(31, reg::edi, reg::r13[-123]);
+    a.shldl(31, reg::r12d, reg::r13[-123]);
+    a.shrdl(31, reg::r12d, reg::r13[-123]);
 
     // -------------------------- IRM (word, 1 byte imm) -----------------------------
 
@@ -2178,9 +2178,9 @@ int main()
     a.movzxbq(reg::dil, reg::rsi);
     a.movzxbq(reg::dil, reg::r13);
 
-    a.movzxbd(reg::dil, reg::esi);
-    a.movzxbd(reg::ah, reg::esi);
-    a.movzxbd(reg::dil, reg::r13d);
+    a.movzxbl(reg::dil, reg::esi);
+    a.movzxbl(reg::ah, reg::esi);
+    a.movzxbl(reg::dil, reg::r13d);
 
     a.movzxbw(reg::dil, reg::si);
     a.movzxbw(reg::ah, reg::si);
@@ -2188,24 +2188,24 @@ int main()
 
     a.movzxbq(reg::rdi[-123], reg::rsi);
 
-    a.movzxbd(reg::rdi[-123], reg::esi);
+    a.movzxbl(reg::rdi[-123], reg::esi);
 
     a.movzxbw(reg::rdi[-123], reg::si);
 
     a.movzxwq(reg::di, reg::rsi);
 
-    a.movzxwd(reg::di, reg::esi);
+    a.movzxwl(reg::di, reg::esi);
 
     a.movzxwq(reg::rdi[-123], reg::rsi);
 
-    a.movzxwd(reg::rdi[-123], reg::esi);
+    a.movzxwl(reg::rdi[-123], reg::esi);
 
     a.movsxbq(reg::dil, reg::rsi);
     a.movsxbq(reg::dil, reg::r13);
 
-    a.movsxbd(reg::dil, reg::esi);
-    a.movsxbd(reg::ah, reg::esi);
-    a.movsxbd(reg::dil, reg::r13d);
+    a.movsxbl(reg::dil, reg::esi);
+    a.movsxbl(reg::ah, reg::esi);
+    a.movsxbl(reg::dil, reg::r13d);
 
     a.movsxbw(reg::dil, reg::si);
     a.movsxbw(reg::ah, reg::si);
@@ -2213,17 +2213,17 @@ int main()
 
     a.movsxbq(reg::rdi[-123], reg::rsi);
 
-    a.movsxbd(reg::rdi[-123], reg::esi);
+    a.movsxbl(reg::rdi[-123], reg::esi);
 
     a.movsxbw(reg::rdi[-123], reg::si);
 
     a.movsxwq(reg::di, reg::rsi);
 
-    a.movsxwd(reg::di, reg::esi);
+    a.movsxwl(reg::di, reg::esi);
 
     a.movsxwq(reg::rdi[-123], reg::rsi);
 
-    a.movsxwd(reg::rdi[-123], reg::esi);
+    a.movsxwl(reg::rdi[-123], reg::esi);
 
     a.movsxdq(reg::edi, reg::rsi);
 
@@ -2262,40 +2262,40 @@ int main()
     // -------------------------- add -----------------------------
 
     a.addq(0x7fffffff, reg::rax);
-    a.addd(0x7fffffff, reg::eax);
+    a.addl(0x7fffffff, reg::eax);
     a.addw(0x7fff, reg::ax);
     a.addb(-123, reg::al);
 
     a.addq(0x7fffffff, reg::rcx);
-    a.addd(0x7fffffff, reg::ecx);
+    a.addl(0x7fffffff, reg::ecx);
     a.addw(0x7fff, reg::cx);
     a.addb(-123, reg::cl);
 
     a.addq(0x7fffffff, reg::rax[-123]);
-    a.addd(0x7fffffff, reg::rax[-123]);
+    a.addl(0x7fffffff, reg::rax[-123]);
     a.addw(0x7fff, reg::rax[-123]);
     a.addb(-123, reg::rax[-123]);
 
     a.addq(-123, reg::rcx);
-    a.addd(-123, reg::ecx);
+    a.addl(-123, reg::ecx);
     a.addw(-123, reg::cx);
 
     a.addq(-123, reg::rax[-123]);
-    a.addd(-123, reg::rax[-123]);
+    a.addl(-123, reg::rax[-123]);
     a.addw(-123, reg::rax[-123]);
 
     a.addq(reg::rax, reg::rdi);
-    a.addd(reg::eax, reg::edi);
+    a.addl(reg::eax, reg::edi);
     a.addw(reg::ax, reg::di);
     a.addb(reg::al, reg::dil);
 
     a.addq(reg::rax, reg::rax[-123]);
-    a.addd(reg::eax, reg::rax[-123]);
+    a.addl(reg::eax, reg::rax[-123]);
     a.addw(reg::ax, reg::rax[-123]);
     a.addb(reg::al, reg::rax[-123]);
 
     a.addq(reg::rax[-123], reg::rdi);
-    a.addd(reg::rax[-123], reg::edi);
+    a.addl(reg::rax[-123], reg::edi);
     a.addw(reg::rax[-123], reg::di);
     a.addb(reg::rax[-123], reg::dil);
 
@@ -2305,10 +2305,10 @@ int main()
     a.xchgq(reg::rax, reg::r8);
     a.xchgq(reg::rcx, reg::rax);
     a.xchgq(reg::r8, reg::rax);
-    a.xchgd(reg::eax, reg::ecx);
-    a.xchgd(reg::eax, reg::r8d);
-    a.xchgd(reg::ecx, reg::eax);
-    a.xchgd(reg::r8d, reg::eax);
+    a.xchgl(reg::eax, reg::ecx);
+    a.xchgl(reg::eax, reg::r8d);
+    a.xchgl(reg::ecx, reg::eax);
+    a.xchgl(reg::r8d, reg::eax);
     a.xchgw(reg::ax, reg::cx);
     a.xchgw(reg::ax, reg::r8w);
     a.xchgw(reg::cx, reg::ax);
@@ -2324,7 +2324,7 @@ int main()
     a.cmpxchg8b(reg::rax[-123]);
 
     a.bswapq(reg::rcx);
-    a.bswapd(reg::ecx);
+    a.bswapl(reg::ecx);
 
     // -------------------------------------------------------
 

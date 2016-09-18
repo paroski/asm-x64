@@ -155,8 +155,8 @@ void patchCall(CodeAddress instrAddr, CodeAddress targetAddr)
     emitR(instr_ ## INSTR_NAME, rn(r)); \
   }
 
-#define X64_INSTR_R_D(INSTR_NAME) \
-  void X64Assembler::INSTR_NAME ## d (Reg32 r) \
+#define X64_INSTR_R_L(INSTR_NAME) \
+  void X64Assembler::INSTR_NAME ## l (Reg32 r) \
   { \
     emitR(instr_ ## INSTR_NAME, rn(r), sz::dword); \
   }
@@ -179,8 +179,8 @@ void patchCall(CodeAddress instrAddr, CodeAddress targetAddr)
     emitM(instr_ ## INSTR_NAME, mr); \
   }
 
-#define X64_INSTR_M_D(INSTR_NAME) \
-  void X64Assembler::INSTR_NAME ## d (const MemoryRef& mr) \
+#define X64_INSTR_M_L(INSTR_NAME) \
+  void X64Assembler::INSTR_NAME ## l (const MemoryRef& mr) \
   { \
     emitM(instr_ ## INSTR_NAME, mr, sz::dword); \
   }
@@ -203,8 +203,8 @@ void patchCall(CodeAddress instrAddr, CodeAddress targetAddr)
     emitRR(instr_ ## INSTR_NAME, rsrc, rdest); \
   }
 
-#define X64_INSTR_RR_D(INSTR_NAME) \
-  void X64Assembler::INSTR_NAME ## d (Reg32 rsrc, Reg32 rdest) \
+#define X64_INSTR_RR_L(INSTR_NAME) \
+  void X64Assembler::INSTR_NAME ## l (Reg32 rsrc, Reg32 rdest) \
   { \
     emitRR(instr_ ## INSTR_NAME, rsrc, rdest, sz::dword); \
   }
@@ -233,8 +233,8 @@ void patchCall(CodeAddress instrAddr, CodeAddress targetAddr)
     emitIR(instr_ ## INSTR_NAME, imm, r); \
   }
 
-#define X64_INSTR_IR_D(INSTR_NAME) \
-  void X64Assembler::INSTR_NAME ## d (int64_t imm, Reg32 r) \
+#define X64_INSTR_IR_L(INSTR_NAME) \
+  void X64Assembler::INSTR_NAME ## l (int64_t imm, Reg32 r) \
   { \
     emitIR(instr_ ## INSTR_NAME, imm, r, sz::dword); \
   }
@@ -263,8 +263,8 @@ void patchCall(CodeAddress instrAddr, CodeAddress targetAddr)
     emitIM(instr_ ## INSTR_NAME, imm, mr); \
   }
 
-#define X64_INSTR_IM_D(INSTR_NAME) \
-  void X64Assembler::INSTR_NAME ## d (int64_t imm, const MemoryRef& mr) \
+#define X64_INSTR_IM_L(INSTR_NAME) \
+  void X64Assembler::INSTR_NAME ## l (int64_t imm, const MemoryRef& mr) \
   { \
     emitIM(instr_ ## INSTR_NAME, imm, mr, sz::dword); \
   }
@@ -287,8 +287,8 @@ void patchCall(CodeAddress instrAddr, CodeAddress targetAddr)
     emitRM(instr_ ## INSTR_NAME, r, mr); \
   }
 
-#define X64_INSTR_RM_D(INSTR_NAME) \
-  void X64Assembler::INSTR_NAME ## d (Reg32 r, const MemoryRef& mr) \
+#define X64_INSTR_RM_L(INSTR_NAME) \
+  void X64Assembler::INSTR_NAME ## l (Reg32 r, const MemoryRef& mr) \
   { \
     emitRM(instr_ ## INSTR_NAME, r, mr, sz::dword); \
   }
@@ -317,8 +317,8 @@ void patchCall(CodeAddress instrAddr, CodeAddress targetAddr)
     emitMR(instr_ ## INSTR_NAME, mr, r); \
   }
 
-#define X64_INSTR_MR_D(INSTR_NAME) \
-  void X64Assembler::INSTR_NAME ## d (const MemoryRef& mr, Reg32 r) \
+#define X64_INSTR_MR_L(INSTR_NAME) \
+  void X64Assembler::INSTR_NAME ## l (const MemoryRef& mr, Reg32 r) \
   { \
     emitMR(instr_ ## INSTR_NAME, mr, r, sz::dword); \
   }
@@ -347,8 +347,8 @@ void patchCall(CodeAddress instrAddr, CodeAddress targetAddr)
     emitIRR(instr_ ## INSTR_NAME, imm, rsrc, rdest); \
   }
 
-#define X64_INSTR_IRR_D(INSTR_NAME) \
-  void X64Assembler::INSTR_NAME ## d (int64_t imm, Reg32 rsrc, Reg32 rdest) \
+#define X64_INSTR_IRR_L(INSTR_NAME) \
+  void X64Assembler::INSTR_NAME ## l (int64_t imm, Reg32 rsrc, Reg32 rdest) \
   { \
     emitIRR(instr_ ## INSTR_NAME, imm, rsrc, rdest, sz::dword); \
   }
@@ -377,8 +377,8 @@ void patchCall(CodeAddress instrAddr, CodeAddress targetAddr)
     emitIRM(instr_ ## INSTR_NAME, imm, r, mr); \
   }
 
-#define X64_INSTR_IRM_D(INSTR_NAME) \
-  void X64Assembler::INSTR_NAME ## d (int64_t imm, Reg32 r, const MemoryRef& mr) \
+#define X64_INSTR_IRM_L(INSTR_NAME) \
+  void X64Assembler::INSTR_NAME ## l (int64_t imm, Reg32 r, const MemoryRef& mr) \
   { \
     emitIRM(instr_ ## INSTR_NAME, imm, r, mr, sz::dword); \
   }
@@ -406,44 +406,44 @@ X64_INSTRS()
 #undef X64_INSTR_NO_ARGS
 #undef X64_INSTR_I
 #undef X64_INSTR_R_Q
-#undef X64_INSTR_R_D
+#undef X64_INSTR_R_L
 #undef X64_INSTR_R_W
 #undef X64_INSTR_R_B
 #undef X64_INSTR_M_Q
-#undef X64_INSTR_M_D
+#undef X64_INSTR_M_L
 #undef X64_INSTR_M_W
 #undef X64_INSTR_M_B
 #undef X64_INSTR_RR_Q
-#undef X64_INSTR_RR_D
+#undef X64_INSTR_RR_L
 #undef X64_INSTR_RR_W
 #undef X64_INSTR_RR_B
 #undef X64_INSTR_RR_XMM
 #undef X64_INSTR_IR_Q
-#undef X64_INSTR_IR_D
+#undef X64_INSTR_IR_L
 #undef X64_INSTR_IR_W
 #undef X64_INSTR_IR_B
 #undef X64_INSTR_IR_XMM
 #undef X64_INSTR_IM_Q
-#undef X64_INSTR_IM_D
+#undef X64_INSTR_IM_L
 #undef X64_INSTR_IM_W
 #undef X64_INSTR_IM_B
 #undef X64_INSTR_RM_Q
-#undef X64_INSTR_RM_D
+#undef X64_INSTR_RM_L
 #undef X64_INSTR_RM_W
 #undef X64_INSTR_RM_B
 #undef X64_INSTR_RM_XMM
 #undef X64_INSTR_MR_Q
-#undef X64_INSTR_MR_D
+#undef X64_INSTR_MR_L
 #undef X64_INSTR_MR_W
 #undef X64_INSTR_MR_B
 #undef X64_INSTR_MR_XMM
 #undef X64_INSTR_IRR_Q
-#undef X64_INSTR_IRR_D
+#undef X64_INSTR_IRR_L
 #undef X64_INSTR_IRR_W
 #undef X64_INSTR_IRR_B
 #undef X64_INSTR_IRR_XMM
 #undef X64_INSTR_IRM_Q
-#undef X64_INSTR_IRM_D
+#undef X64_INSTR_IRM_L
 #undef X64_INSTR_IRM_W
 #undef X64_INSTR_IRM_B
 #undef X64_INSTR_IMR_XMM
@@ -498,7 +498,7 @@ void X64Assembler::imulq(Reg64 rsrc, Reg64 rdest)
   emitRR(instr_imul2, rsrc, rdest);
 }
 
-void X64Assembler::imuld(Reg32 rsrc, Reg32 rdest)
+void X64Assembler::imull(Reg32 rsrc, Reg32 rdest)
 {
   emitRR(instr_imul2, rsrc, rdest, sz::dword);
 }
@@ -510,24 +510,20 @@ void X64Assembler::imulw(Reg16 rsrc, Reg16 rdest)
 
 void X64Assembler::movzxwq(Reg16 rsrc, Reg64 rdest)
 {
-  // XXX We could always use movzxwd instead and potentially avoid the
-  // need for the REX byte.
   emitRR(instr_movzxw, rsrc, rdest);
 }
 
-void X64Assembler::movzxwd(Reg16 rsrc, Reg32 rdest)
+void X64Assembler::movzxwl(Reg16 rsrc, Reg32 rdest)
 {
   emitRR(instr_movzxw, rsrc, rdest, sz::dword);
 }
 
 void X64Assembler::movzxbq(Reg8 rsrc, Reg64 rdest)
 {
-  // XXX We could always use movzxbd instead and potentially avoid the
-  // need for the REX byte.
   emitRR(instr_movzxb, rsrc, rdest);
 }
 
-void X64Assembler::movzxbd(Reg8 rsrc, Reg32 rdest)
+void X64Assembler::movzxbl(Reg8 rsrc, Reg32 rdest)
 {
   emitRR(instr_movzxb, rsrc, rdest, sz::dword);
 }
@@ -547,7 +543,7 @@ void X64Assembler::movsxwq(Reg16 rsrc, Reg64 rdest)
   emitRR(instr_movsxw, rsrc, rdest);
 }
 
-void X64Assembler::movsxwd(Reg16 rsrc, Reg32 rdest)
+void X64Assembler::movsxwl(Reg16 rsrc, Reg32 rdest)
 {
   emitRR(instr_movsxw, rsrc, rdest, sz::dword);
 }
@@ -557,7 +553,7 @@ void X64Assembler::movsxbq(Reg8 rsrc, Reg64 rdest)
   emitRR(instr_movsxb, rsrc, rdest);
 }
 
-void X64Assembler::movsxbd(Reg8 rsrc, Reg32 rdest)
+void X64Assembler::movsxbl(Reg8 rsrc, Reg32 rdest)
 {
   emitRR(instr_movsxb, rsrc, rdest, sz::dword);
 }
@@ -577,12 +573,12 @@ void X64Assembler::movq(RegXMM rsrc, Reg64 rdest)
   emitRR(instr_xmm2gpr, rsrc, rdest);
 }
 
-void X64Assembler::movd(Reg32 rsrc, RegXMM rdest)
+void X64Assembler::movl(Reg32 rsrc, RegXMM rdest)
 {
   emitRR(instr_gpr2xmm, rsrc, rdest, sz::dword);
 }
 
-void X64Assembler::movd(RegXMM rsrc, Reg32 rdest)
+void X64Assembler::movl(RegXMM rsrc, Reg32 rdest)
 {
   emitRR(instr_xmm2gpr, rsrc, rdest, sz::dword);
 }
@@ -592,7 +588,7 @@ void X64Assembler::cvtsi2sdq(Reg64 rsrc, RegXMM rdest)
   emitRR(instr_cvtsi2sd, rsrc, rdest);
 }
 
-void X64Assembler::cvtsi2sdd(Reg32 rsrc, RegXMM rdest)
+void X64Assembler::cvtsi2sdl(Reg32 rsrc, RegXMM rdest)
 {
   emitRR(instr_cvtsi2sd, rsrc, rdest, sz::dword);
 }
@@ -602,7 +598,7 @@ void X64Assembler::cvttsd2siq(RegXMM rsrc, Reg64 rdest)
   emitRR(instr_cvttsd2si, rsrc, rdest);
 }
 
-void X64Assembler::cvttsd2sid(RegXMM rsrc, Reg32 rdest)
+void X64Assembler::cvttsd2sil(RegXMM rsrc, Reg32 rdest)
 {
   emitRR(instr_cvttsd2si, rsrc, rdest, sz::dword);
 }
@@ -612,7 +608,7 @@ void X64Assembler::movq(RegXMM r, const MemoryRef& mr)
   emitRM(instr_xmm2gpr, r, mr);
 }
 
-void X64Assembler::movd(RegXMM r, const MemoryRef& mr)
+void X64Assembler::movl(RegXMM r, const MemoryRef& mr)
 {
   emitRM(instr_xmm2gpr, r, mr, sz::dword);
 }
@@ -622,7 +618,7 @@ void X64Assembler::imulq(const MemoryRef& mr, Reg64 r)
   emitMR(instr_imul2, mr, r);
 }
 
-void X64Assembler::imuld(const MemoryRef& mr, Reg32 r)
+void X64Assembler::imull(const MemoryRef& mr, Reg32 r)
 {
   emitMR(instr_imul2, mr, r, sz::dword);
 }
@@ -634,24 +630,20 @@ void X64Assembler::imulw(const MemoryRef& mr, Reg16 r)
 
 void X64Assembler::movzxwq(const MemoryRef& mr, Reg64 r)
 {
-  // XXX We could always use movzxwd instead and potentially avoid the
-  // need for the REX byte.
   emitMR(instr_movzxw, mr, r);
 }
 
-void X64Assembler::movzxwd(const MemoryRef& mr, Reg32 r)
+void X64Assembler::movzxwl(const MemoryRef& mr, Reg32 r)
 {
   emitMR(instr_movzxw, mr, r, sz::dword);
 }
 
 void X64Assembler::movzxbq(const MemoryRef& mr, Reg64 r)
 {
-  // XXX We could always use movzxbd instead and potentially avoid the
-  // need for the REX byte.
   emitMR(instr_movzxb, mr, r);
 }
 
-void X64Assembler::movzxbd(const MemoryRef& mr, Reg32 r)
+void X64Assembler::movzxbl(const MemoryRef& mr, Reg32 r)
 {
   emitMR(instr_movzxb, mr, r, sz::dword);
 }
@@ -671,7 +663,7 @@ void X64Assembler::movsxwq(const MemoryRef& mr, Reg64 r)
   emitMR(instr_movsxw, mr, r);
 }
 
-void X64Assembler::movsxwd(const MemoryRef& mr, Reg32 r)
+void X64Assembler::movsxwl(const MemoryRef& mr, Reg32 r)
 {
   emitMR(instr_movsxw, mr, r, sz::dword);
 }
@@ -681,7 +673,7 @@ void X64Assembler::movsxbq(const MemoryRef& mr, Reg64 r)
   emitMR(instr_movsxb, mr, r);
 }
 
-void X64Assembler::movsxbd(const MemoryRef& mr, Reg32 r)
+void X64Assembler::movsxbl(const MemoryRef& mr, Reg32 r)
 {
   emitMR(instr_movsxb, mr, r, sz::dword);
 }
@@ -696,7 +688,7 @@ void X64Assembler::movq(const MemoryRef& mr, RegXMM r)
   emitMR(instr_gpr2xmm, mr, r);
 }
 
-void X64Assembler::movd(const MemoryRef& mr, RegXMM r)
+void X64Assembler::movl(const MemoryRef& mr, RegXMM r)
 {
   emitMR(instr_gpr2xmm, mr, r, sz::dword);
 }
@@ -706,7 +698,7 @@ void X64Assembler::cvtsi2sdq(const MemoryRef& mr, RegXMM r)
   emitMR(instr_cvtsi2sd, mr, r);
 }
 
-void X64Assembler::cvtsi2sdd(const MemoryRef& mr, RegXMM r)
+void X64Assembler::cvtsi2sdl(const MemoryRef& mr, RegXMM r)
 {
   emitMR(instr_cvtsi2sd, mr, r, sz::dword);
 }
@@ -716,7 +708,7 @@ void X64Assembler::cvttsd2siq(const MemoryRef& mr, Reg64 r)
   emitMR(instr_cvttsd2si, mr, r);
 }
 
-void X64Assembler::cvttsd2sid(const MemoryRef& mr, Reg32 r)
+void X64Assembler::cvttsd2sil(const MemoryRef& mr, Reg32 r)
 {
   emitMR(instr_cvttsd2si, mr, r, sz::dword);
 }
@@ -726,7 +718,7 @@ void X64Assembler::imulq(int64_t imm, Reg64 rsrc, Reg64 rdest)
   emitIRR(instr_imul3, imm, rsrc, rdest);
 }
 
-void X64Assembler::imuld(int64_t imm, Reg32 rsrc, Reg32 rdest)
+void X64Assembler::imull(int64_t imm, Reg32 rsrc, Reg32 rdest)
 {
   emitIRR(instr_imul3, imm, rsrc, rdest, sz::dword);
 }
@@ -741,7 +733,7 @@ void X64Assembler::imulq(int64_t imm, const MemoryRef& mr, Reg64 r)
   emitIMR(instr_imul3, imm, mr, r);
 }
 
-void X64Assembler::imuld(int64_t imm, const MemoryRef& mr, Reg32 r)
+void X64Assembler::imull(int64_t imm, const MemoryRef& mr, Reg32 r)
 {
   emitIMR(instr_imul3, imm, mr, r, sz::dword);
 }
@@ -776,7 +768,7 @@ void X64Assembler::cmovccq(int jcond, Reg64 rsrc, Reg64 rdest)
   emitCRR(instr_cmovcc, jcond, rsrc, rdest);
 }
 
-void X64Assembler::cmovccd(int jcond, Reg32 rsrc, Reg32 rdest)
+void X64Assembler::cmovccl(int jcond, Reg32 rsrc, Reg32 rdest)
 {
   emitCRR(instr_cmovcc, jcond, rsrc, rdest, sz::dword);
 }
@@ -791,7 +783,7 @@ void X64Assembler::cmovccq(int jcond, const MemoryRef& mr, Reg64 r)
   emitCMR(instr_cmovcc, jcond, mr, r);
 }
 
-void X64Assembler::cmovccd(int jcond, const MemoryRef& mr, Reg32 r)
+void X64Assembler::cmovccl(int jcond, const MemoryRef& mr, Reg32 r)
 {
   emitCMR(instr_cmovcc, jcond, mr, r, sz::dword);
 }

@@ -2460,91 +2460,91 @@ private:
 
 //////////////////////////////////////////////////////////////////////
 
-#define X64_INSTR_R_QD(INSTR_NAME) \
+#define X64_INSTR_R_QL(INSTR_NAME) \
   X64_INSTR_R_Q(INSTR_NAME) \
-  X64_INSTR_R_D(INSTR_NAME)
+  X64_INSTR_R_L(INSTR_NAME)
 
-#define X64_INSTR_R_QDW(INSTR_NAME) \
-  X64_INSTR_R_QD(INSTR_NAME) \
+#define X64_INSTR_R_QLW(INSTR_NAME) \
+  X64_INSTR_R_QL(INSTR_NAME) \
   X64_INSTR_R_W(INSTR_NAME)
 
-#define X64_INSTR_R_QDWB(INSTR_NAME) \
-  X64_INSTR_R_QDW(INSTR_NAME) \
+#define X64_INSTR_R_QLWB(INSTR_NAME) \
+  X64_INSTR_R_QLW(INSTR_NAME) \
   X64_INSTR_R_B(INSTR_NAME)
 
 #define X64_INSTR_R_QW(INSTR_NAME) \
   X64_INSTR_R_Q(INSTR_NAME) \
   X64_INSTR_R_W(INSTR_NAME)
 
-#define X64_INSTR_M_QD(INSTR_NAME) \
+#define X64_INSTR_M_QL(INSTR_NAME) \
   X64_INSTR_M_Q(INSTR_NAME) \
-  X64_INSTR_M_D(INSTR_NAME)
+  X64_INSTR_M_L(INSTR_NAME)
 
-#define X64_INSTR_M_QDW(INSTR_NAME) \
-  X64_INSTR_M_QD(INSTR_NAME) \
+#define X64_INSTR_M_QLW(INSTR_NAME) \
+  X64_INSTR_M_QL(INSTR_NAME) \
   X64_INSTR_M_W(INSTR_NAME)
 
-#define X64_INSTR_M_QDWB(INSTR_NAME) \
-  X64_INSTR_M_QDW(INSTR_NAME) \
+#define X64_INSTR_M_QLWB(INSTR_NAME) \
+  X64_INSTR_M_QLW(INSTR_NAME) \
   X64_INSTR_M_B(INSTR_NAME)
 
 #define X64_INSTR_M_QW(INSTR_NAME) \
   X64_INSTR_M_Q(INSTR_NAME) \
   X64_INSTR_M_W(INSTR_NAME)
 
-#define X64_INSTR_RR_QDW(INSTR_NAME) \
+#define X64_INSTR_RR_QLW(INSTR_NAME) \
   X64_INSTR_RR_Q(INSTR_NAME) \
-  X64_INSTR_RR_D(INSTR_NAME) \
+  X64_INSTR_RR_L(INSTR_NAME) \
   X64_INSTR_RR_W(INSTR_NAME)
 
-#define X64_INSTR_RR_QDWB(INSTR_NAME) \
-  X64_INSTR_RR_QDW(INSTR_NAME) \
+#define X64_INSTR_RR_QLWB(INSTR_NAME) \
+  X64_INSTR_RR_QLW(INSTR_NAME) \
   X64_INSTR_RR_B(INSTR_NAME)
 
-#define X64_INSTR_IR_QDW(INSTR_NAME) \
+#define X64_INSTR_IR_QLW(INSTR_NAME) \
   X64_INSTR_IR_Q(INSTR_NAME) \
-  X64_INSTR_IR_D(INSTR_NAME) \
+  X64_INSTR_IR_L(INSTR_NAME) \
   X64_INSTR_IR_W(INSTR_NAME)
 
-#define X64_INSTR_IR_QDWB(INSTR_NAME) \
-  X64_INSTR_IR_QDW(INSTR_NAME) \
+#define X64_INSTR_IR_QLWB(INSTR_NAME) \
+  X64_INSTR_IR_QLW(INSTR_NAME) \
   X64_INSTR_IR_B(INSTR_NAME)
 
-#define X64_INSTR_IM_QDW(INSTR_NAME) \
+#define X64_INSTR_IM_QLW(INSTR_NAME) \
   X64_INSTR_IM_Q(INSTR_NAME) \
-  X64_INSTR_IM_D(INSTR_NAME) \
+  X64_INSTR_IM_L(INSTR_NAME) \
   X64_INSTR_IM_W(INSTR_NAME)
 
-#define X64_INSTR_IM_QDWB(INSTR_NAME) \
-  X64_INSTR_IM_QDW(INSTR_NAME) \
+#define X64_INSTR_IM_QLWB(INSTR_NAME) \
+  X64_INSTR_IM_QLW(INSTR_NAME) \
   X64_INSTR_IM_B(INSTR_NAME)
 
-#define X64_INSTR_RM_QDW(INSTR_NAME) \
+#define X64_INSTR_RM_QLW(INSTR_NAME) \
   X64_INSTR_RM_Q(INSTR_NAME) \
-  X64_INSTR_RM_D(INSTR_NAME) \
+  X64_INSTR_RM_L(INSTR_NAME) \
   X64_INSTR_RM_W(INSTR_NAME)
 
-#define X64_INSTR_RM_QDWB(INSTR_NAME) \
-  X64_INSTR_RM_QDW(INSTR_NAME) \
+#define X64_INSTR_RM_QLWB(INSTR_NAME) \
+  X64_INSTR_RM_QLW(INSTR_NAME) \
   X64_INSTR_RM_B(INSTR_NAME)
 
-#define X64_INSTR_MR_QDW(INSTR_NAME) \
+#define X64_INSTR_MR_QLW(INSTR_NAME) \
   X64_INSTR_MR_Q(INSTR_NAME) \
-  X64_INSTR_MR_D(INSTR_NAME) \
+  X64_INSTR_MR_L(INSTR_NAME) \
   X64_INSTR_MR_W(INSTR_NAME)
 
-#define X64_INSTR_MR_QDWB(INSTR_NAME) \
-  X64_INSTR_MR_QDW(INSTR_NAME) \
+#define X64_INSTR_MR_QLWB(INSTR_NAME) \
+  X64_INSTR_MR_QLW(INSTR_NAME) \
   X64_INSTR_MR_B(INSTR_NAME)
 
-#define X64_INSTR_IRR_QDW(INSTR_NAME) \
+#define X64_INSTR_IRR_QLW(INSTR_NAME) \
   X64_INSTR_IRR_Q(INSTR_NAME) \
-  X64_INSTR_IRR_D(INSTR_NAME) \
+  X64_INSTR_IRR_L(INSTR_NAME) \
   X64_INSTR_IRR_W(INSTR_NAME)
 
-#define X64_INSTR_IRM_QDW(INSTR_NAME) \
+#define X64_INSTR_IRM_QLW(INSTR_NAME) \
   X64_INSTR_IRM_Q(INSTR_NAME) \
-  X64_INSTR_IRM_D(INSTR_NAME) \
+  X64_INSTR_IRM_L(INSTR_NAME) \
   X64_INSTR_IRM_W(INSTR_NAME)
 
 //////////////////////////////////////////////////////////////////////
@@ -2566,61 +2566,61 @@ private:
   X64_INSTR_I(push) \
   X64_INSTR_I(ret) \
   X64_INSTR_I(call) \
-  X64_INSTR_R_QDWB(inc) \
-  X64_INSTR_R_QDWB(dec) \
-  X64_INSTR_R_QDWB(not) \
-  X64_INSTR_R_QDWB(neg) \
-  X64_INSTR_R_QDWB(mul) \
-  X64_INSTR_R_QDWB(div) \
-  X64_INSTR_R_QDWB(idiv) \
-  X64_INSTR_R_QDWB(imul) \
-  X64_INSTR_R_QDWB(rol) \
-  X64_INSTR_R_QDWB(ror) \
-  X64_INSTR_R_QDWB(rcl) \
-  X64_INSTR_R_QDWB(rcr) \
-  X64_INSTR_R_QDWB(shl) \
-  X64_INSTR_R_QDWB(shr) \
-  X64_INSTR_R_QDWB(sar) \
-  X64_INSTR_R_QD(bswap) \
+  X64_INSTR_R_QLWB(inc) \
+  X64_INSTR_R_QLWB(dec) \
+  X64_INSTR_R_QLWB(not) \
+  X64_INSTR_R_QLWB(neg) \
+  X64_INSTR_R_QLWB(mul) \
+  X64_INSTR_R_QLWB(div) \
+  X64_INSTR_R_QLWB(idiv) \
+  X64_INSTR_R_QLWB(imul) \
+  X64_INSTR_R_QLWB(rol) \
+  X64_INSTR_R_QLWB(ror) \
+  X64_INSTR_R_QLWB(rcl) \
+  X64_INSTR_R_QLWB(rcr) \
+  X64_INSTR_R_QLWB(shl) \
+  X64_INSTR_R_QLWB(shr) \
+  X64_INSTR_R_QLWB(sar) \
+  X64_INSTR_R_QL(bswap) \
   X64_INSTR_R_QW(push) \
   X64_INSTR_R_QW(pop) \
   X64_INSTR_R_Q(jmp) \
   X64_INSTR_R_Q(call) \
-  X64_INSTR_M_QDWB(inc) \
-  X64_INSTR_M_QDWB(dec) \
-  X64_INSTR_M_QDWB(not) \
-  X64_INSTR_M_QDWB(neg) \
-  X64_INSTR_M_QDWB(mul) \
-  X64_INSTR_M_QDWB(div) \
-  X64_INSTR_M_QDWB(idiv) \
-  X64_INSTR_M_QDWB(imul) \
-  X64_INSTR_M_QDWB(rol) \
-  X64_INSTR_M_QDWB(ror) \
-  X64_INSTR_M_QDWB(rcl) \
-  X64_INSTR_M_QDWB(rcr) \
-  X64_INSTR_M_QDWB(shl) \
-  X64_INSTR_M_QDWB(shr) \
-  X64_INSTR_M_QDWB(sar) \
+  X64_INSTR_M_QLWB(inc) \
+  X64_INSTR_M_QLWB(dec) \
+  X64_INSTR_M_QLWB(not) \
+  X64_INSTR_M_QLWB(neg) \
+  X64_INSTR_M_QLWB(mul) \
+  X64_INSTR_M_QLWB(div) \
+  X64_INSTR_M_QLWB(idiv) \
+  X64_INSTR_M_QLWB(imul) \
+  X64_INSTR_M_QLWB(rol) \
+  X64_INSTR_M_QLWB(ror) \
+  X64_INSTR_M_QLWB(rcl) \
+  X64_INSTR_M_QLWB(rcr) \
+  X64_INSTR_M_QLWB(shl) \
+  X64_INSTR_M_QLWB(shr) \
+  X64_INSTR_M_QLWB(sar) \
   X64_INSTR_M_QW(push) \
   X64_INSTR_M_QW(pop) \
   X64_INSTR_M_Q(jmp) \
   X64_INSTR_M_Q(call) \
-  X64_INSTR_RR_QDWB(xchg) \
-  X64_INSTR_RR_QDWB(add) \
-  X64_INSTR_RR_QDWB(sub) \
-  X64_INSTR_RR_QDWB(and) \
-  X64_INSTR_RR_QDWB(or) \
-  X64_INSTR_RR_QDWB(xor) \
-  X64_INSTR_RR_QDWB(cmp) \
-  X64_INSTR_RR_QDWB(sbb) \
-  X64_INSTR_RR_QDWB(adc) \
-  X64_INSTR_RR_QDWB(mov) \
-  X64_INSTR_RR_QDWB(test) \
-  X64_INSTR_RR_QDWB(xadd) \
-  X64_INSTR_RR_QDWB(cmpxchg) \
-  X64_INSTR_RR_QDW(shld) \
-  X64_INSTR_RR_QDW(shrd) \
-  X64_INSTR_RR_QDW(popcnt) \
+  X64_INSTR_RR_QLWB(xchg) \
+  X64_INSTR_RR_QLWB(add) \
+  X64_INSTR_RR_QLWB(sub) \
+  X64_INSTR_RR_QLWB(and) \
+  X64_INSTR_RR_QLWB(or) \
+  X64_INSTR_RR_QLWB(xor) \
+  X64_INSTR_RR_QLWB(cmp) \
+  X64_INSTR_RR_QLWB(sbb) \
+  X64_INSTR_RR_QLWB(adc) \
+  X64_INSTR_RR_QLWB(mov) \
+  X64_INSTR_RR_QLWB(test) \
+  X64_INSTR_RR_QLWB(xadd) \
+  X64_INSTR_RR_QLWB(cmpxchg) \
+  X64_INSTR_RR_QLW(shld) \
+  X64_INSTR_RR_QLW(shrd) \
+  X64_INSTR_RR_QLW(popcnt) \
   X64_INSTR_RR_XMM(movsd) \
   X64_INSTR_RR_XMM(addsd) \
   X64_INSTR_RR_XMM(subsd) \
@@ -2638,57 +2638,57 @@ private:
   X64_INSTR_RR_XMM(movapd) \
   X64_INSTR_RR_XMM(movupd) \
   X64_INSTR_RR_XMM(unpcklpd) \
-  X64_INSTR_IR_QDWB(add) \
-  X64_INSTR_IR_QDWB(sub) \
-  X64_INSTR_IR_QDWB(and) \
-  X64_INSTR_IR_QDWB(or) \
-  X64_INSTR_IR_QDWB(xor) \
-  X64_INSTR_IR_QDWB(cmp) \
-  X64_INSTR_IR_QDWB(adc) \
-  X64_INSTR_IR_QDWB(sbb) \
-  X64_INSTR_IR_QDWB(mov) \
-  X64_INSTR_IR_QDWB(test) \
-  X64_INSTR_IR_QDWB(rol) \
-  X64_INSTR_IR_QDWB(ror) \
-  X64_INSTR_IR_QDWB(rcl) \
-  X64_INSTR_IR_QDWB(rcr) \
-  X64_INSTR_IR_QDWB(shl) \
-  X64_INSTR_IR_QDWB(shr) \
-  X64_INSTR_IR_QDWB(sar) \
+  X64_INSTR_IR_QLWB(add) \
+  X64_INSTR_IR_QLWB(sub) \
+  X64_INSTR_IR_QLWB(and) \
+  X64_INSTR_IR_QLWB(or) \
+  X64_INSTR_IR_QLWB(xor) \
+  X64_INSTR_IR_QLWB(cmp) \
+  X64_INSTR_IR_QLWB(adc) \
+  X64_INSTR_IR_QLWB(sbb) \
+  X64_INSTR_IR_QLWB(mov) \
+  X64_INSTR_IR_QLWB(test) \
+  X64_INSTR_IR_QLWB(rol) \
+  X64_INSTR_IR_QLWB(ror) \
+  X64_INSTR_IR_QLWB(rcl) \
+  X64_INSTR_IR_QLWB(rcr) \
+  X64_INSTR_IR_QLWB(shl) \
+  X64_INSTR_IR_QLWB(shr) \
+  X64_INSTR_IR_QLWB(sar) \
   X64_INSTR_IR_XMM(psllq) \
   X64_INSTR_IR_XMM(psrlq) \
-  X64_INSTR_IM_QDWB(add) \
-  X64_INSTR_IM_QDWB(sub) \
-  X64_INSTR_IM_QDWB(and) \
-  X64_INSTR_IM_QDWB(or) \
-  X64_INSTR_IM_QDWB(xor) \
-  X64_INSTR_IM_QDWB(cmp) \
-  X64_INSTR_IM_QDWB(adc) \
-  X64_INSTR_IM_QDWB(sbb) \
-  X64_INSTR_IM_QDWB(mov) \
-  X64_INSTR_IM_QDWB(test) \
-  X64_INSTR_IM_QDWB(rol) \
-  X64_INSTR_IM_QDWB(ror) \
-  X64_INSTR_IM_QDWB(rcl) \
-  X64_INSTR_IM_QDWB(rcr) \
-  X64_INSTR_IM_QDWB(shl) \
-  X64_INSTR_IM_QDWB(shr) \
-  X64_INSTR_IM_QDWB(sar) \
-  X64_INSTR_RM_QDWB(xchg) \
-  X64_INSTR_RM_QDWB(add) \
-  X64_INSTR_RM_QDWB(sub) \
-  X64_INSTR_RM_QDWB(and) \
-  X64_INSTR_RM_QDWB(or) \
-  X64_INSTR_RM_QDWB(xor) \
-  X64_INSTR_RM_QDWB(cmp) \
-  X64_INSTR_RM_QDWB(adc) \
-  X64_INSTR_RM_QDWB(sbb) \
-  X64_INSTR_RM_QDWB(mov) \
-  X64_INSTR_RM_QDWB(test) \
-  X64_INSTR_RM_QDWB(xadd) \
-  X64_INSTR_RM_QDWB(cmpxchg) \
-  X64_INSTR_RM_QDW(shld) \
-  X64_INSTR_RM_QDW(shrd) \
+  X64_INSTR_IM_QLWB(add) \
+  X64_INSTR_IM_QLWB(sub) \
+  X64_INSTR_IM_QLWB(and) \
+  X64_INSTR_IM_QLWB(or) \
+  X64_INSTR_IM_QLWB(xor) \
+  X64_INSTR_IM_QLWB(cmp) \
+  X64_INSTR_IM_QLWB(adc) \
+  X64_INSTR_IM_QLWB(sbb) \
+  X64_INSTR_IM_QLWB(mov) \
+  X64_INSTR_IM_QLWB(test) \
+  X64_INSTR_IM_QLWB(rol) \
+  X64_INSTR_IM_QLWB(ror) \
+  X64_INSTR_IM_QLWB(rcl) \
+  X64_INSTR_IM_QLWB(rcr) \
+  X64_INSTR_IM_QLWB(shl) \
+  X64_INSTR_IM_QLWB(shr) \
+  X64_INSTR_IM_QLWB(sar) \
+  X64_INSTR_RM_QLWB(xchg) \
+  X64_INSTR_RM_QLWB(add) \
+  X64_INSTR_RM_QLWB(sub) \
+  X64_INSTR_RM_QLWB(and) \
+  X64_INSTR_RM_QLWB(or) \
+  X64_INSTR_RM_QLWB(xor) \
+  X64_INSTR_RM_QLWB(cmp) \
+  X64_INSTR_RM_QLWB(adc) \
+  X64_INSTR_RM_QLWB(sbb) \
+  X64_INSTR_RM_QLWB(mov) \
+  X64_INSTR_RM_QLWB(test) \
+  X64_INSTR_RM_QLWB(xadd) \
+  X64_INSTR_RM_QLWB(cmpxchg) \
+  X64_INSTR_RM_QLW(shld) \
+  X64_INSTR_RM_QLW(shrd) \
   X64_INSTR_RM_XMM(movsd) \
   X64_INSTR_RM_XMM(movdqa) \
   X64_INSTR_RM_XMM(movdqu) \
@@ -2696,18 +2696,18 @@ private:
   X64_INSTR_RM_XMM(movups) \
   X64_INSTR_RM_XMM(movapd) \
   X64_INSTR_RM_XMM(movupd) \
-  X64_INSTR_MR_QDWB(xchg) \
-  X64_INSTR_MR_QDWB(add) \
-  X64_INSTR_MR_QDWB(sub) \
-  X64_INSTR_MR_QDWB(and) \
-  X64_INSTR_MR_QDWB(or) \
-  X64_INSTR_MR_QDWB(xor) \
-  X64_INSTR_MR_QDWB(cmp) \
-  X64_INSTR_MR_QDWB(adc) \
-  X64_INSTR_MR_QDWB(sbb) \
-  X64_INSTR_MR_QDWB(mov) \
-  X64_INSTR_MR_QDWB(test) \
-  X64_INSTR_MR_QDW(lea) \
+  X64_INSTR_MR_QLWB(xchg) \
+  X64_INSTR_MR_QLWB(add) \
+  X64_INSTR_MR_QLWB(sub) \
+  X64_INSTR_MR_QLWB(and) \
+  X64_INSTR_MR_QLWB(or) \
+  X64_INSTR_MR_QLWB(xor) \
+  X64_INSTR_MR_QLWB(cmp) \
+  X64_INSTR_MR_QLWB(adc) \
+  X64_INSTR_MR_QLWB(sbb) \
+  X64_INSTR_MR_QLWB(mov) \
+  X64_INSTR_MR_QLWB(test) \
+  X64_INSTR_MR_QLW(lea) \
   X64_INSTR_MR_XMM(movsd) \
   X64_INSTR_MR_XMM(addsd) \
   X64_INSTR_MR_XMM(subsd) \
@@ -2726,11 +2726,11 @@ private:
   X64_INSTR_MR_XMM(movupd) \
   X64_INSTR_MR_XMM(lddqu) \
   X64_INSTR_MR_XMM(unpcklpd) \
-  X64_INSTR_IRR_QDW(shld) \
-  X64_INSTR_IRR_QDW(shrd) \
+  X64_INSTR_IRR_QLW(shld) \
+  X64_INSTR_IRR_QLW(shrd) \
   X64_INSTR_IRR_XMM(roundsd) \
-  X64_INSTR_IRM_QDW(shld) \
-  X64_INSTR_IRM_QDW(shrd) \
+  X64_INSTR_IRM_QLW(shld) \
+  X64_INSTR_IRM_QLW(shrd) \
   X64_INSTR_IMR_XMM(roundsd)
 
 //////////////////////////////////////////////////////////////////////
@@ -2746,8 +2746,8 @@ public:
 #define X64_INSTR_R_Q(INSTR_NAME) \
   void INSTR_NAME ## q (Reg64 r);
 
-#define X64_INSTR_R_D(INSTR_NAME) \
-  void INSTR_NAME ## d (Reg32 r);
+#define X64_INSTR_R_L(INSTR_NAME) \
+  void INSTR_NAME ## l (Reg32 r);
 
 #define X64_INSTR_R_W(INSTR_NAME) \
   void INSTR_NAME ## w (Reg16 r);
@@ -2758,8 +2758,8 @@ public:
 #define X64_INSTR_M_Q(INSTR_NAME) \
   void INSTR_NAME ## q (const MemoryRef& mr);
 
-#define X64_INSTR_M_D(INSTR_NAME) \
-  void INSTR_NAME ## d (const MemoryRef& mr);
+#define X64_INSTR_M_L(INSTR_NAME) \
+  void INSTR_NAME ## l (const MemoryRef& mr);
 
 #define X64_INSTR_M_W(INSTR_NAME) \
   void INSTR_NAME ## w (const MemoryRef& mr);
@@ -2770,8 +2770,8 @@ public:
 #define X64_INSTR_RR_Q(INSTR_NAME) \
   void INSTR_NAME ## q (Reg64 rsrc, Reg64 rdest);
 
-#define X64_INSTR_RR_D(INSTR_NAME) \
-  void INSTR_NAME ## d (Reg32 rsrc, Reg32 rdest);
+#define X64_INSTR_RR_L(INSTR_NAME) \
+  void INSTR_NAME ## l (Reg32 rsrc, Reg32 rdest);
 
 #define X64_INSTR_RR_W(INSTR_NAME) \
   void INSTR_NAME ## w (Reg16 rsrc, Reg16 rdest);
@@ -2785,8 +2785,8 @@ public:
 #define X64_INSTR_IR_Q(INSTR_NAME) \
   void INSTR_NAME ## q (int64_t imm, Reg64 r);
 
-#define X64_INSTR_IR_D(INSTR_NAME) \
-  void INSTR_NAME ## d (int64_t imm, Reg32 r);
+#define X64_INSTR_IR_L(INSTR_NAME) \
+  void INSTR_NAME ## l (int64_t imm, Reg32 r);
 
 #define X64_INSTR_IR_W(INSTR_NAME) \
   void INSTR_NAME ## w (int64_t imm, Reg16 r);
@@ -2800,8 +2800,8 @@ public:
 #define X64_INSTR_IM_Q(INSTR_NAME) \
   void INSTR_NAME ## q (int64_t imm, const MemoryRef& mr);
 
-#define X64_INSTR_IM_D(INSTR_NAME) \
-  void INSTR_NAME ## d (int64_t imm, const MemoryRef& mr);
+#define X64_INSTR_IM_L(INSTR_NAME) \
+  void INSTR_NAME ## l (int64_t imm, const MemoryRef& mr);
 
 #define X64_INSTR_IM_W(INSTR_NAME) \
   void INSTR_NAME ## w (int64_t imm, const MemoryRef& mr);
@@ -2812,8 +2812,8 @@ public:
 #define X64_INSTR_RM_Q(INSTR_NAME) \
   void INSTR_NAME ## q (Reg64 r, const MemoryRef& mr);
 
-#define X64_INSTR_RM_D(INSTR_NAME) \
-  void INSTR_NAME ## d (Reg32 r, const MemoryRef& mr);
+#define X64_INSTR_RM_L(INSTR_NAME) \
+  void INSTR_NAME ## l (Reg32 r, const MemoryRef& mr);
 
 #define X64_INSTR_RM_W(INSTR_NAME) \
   void INSTR_NAME ## w (Reg16 r, const MemoryRef& mr);
@@ -2827,8 +2827,8 @@ public:
 #define X64_INSTR_MR_Q(INSTR_NAME) \
   void INSTR_NAME ## q (const MemoryRef& mr, Reg64 r);
 
-#define X64_INSTR_MR_D(INSTR_NAME) \
-  void INSTR_NAME ## d (const MemoryRef& mr, Reg32 r);
+#define X64_INSTR_MR_L(INSTR_NAME) \
+  void INSTR_NAME ## l (const MemoryRef& mr, Reg32 r);
 
 #define X64_INSTR_MR_W(INSTR_NAME) \
   void INSTR_NAME ## w (const MemoryRef& mr, Reg16 r);
@@ -2842,8 +2842,8 @@ public:
 #define X64_INSTR_IRR_Q(INSTR_NAME) \
   void INSTR_NAME ## q (int64_t imm, Reg64 rsrc, Reg64 rdest);
 
-#define X64_INSTR_IRR_D(INSTR_NAME) \
-  void INSTR_NAME ## d (int64_t imm, Reg32 rsrc, Reg32 rdest);
+#define X64_INSTR_IRR_L(INSTR_NAME) \
+  void INSTR_NAME ## l (int64_t imm, Reg32 rsrc, Reg32 rdest);
 
 #define X64_INSTR_IRR_W(INSTR_NAME) \
   void INSTR_NAME ## w (int64_t imm, Reg16 rsrc, Reg16 rdest);
@@ -2857,8 +2857,8 @@ public:
 #define X64_INSTR_IRM_Q(INSTR_NAME) \
   void INSTR_NAME ## q (int64_t imm, Reg64 r, const MemoryRef& mr);
 
-#define X64_INSTR_IRM_D(INSTR_NAME) \
-  void INSTR_NAME ## d (int64_t imm, Reg32 r, const MemoryRef& mr);
+#define X64_INSTR_IRM_L(INSTR_NAME) \
+  void INSTR_NAME ## l (int64_t imm, Reg32 r, const MemoryRef& mr);
 
 #define X64_INSTR_IRM_W(INSTR_NAME) \
   void INSTR_NAME ## w (int64_t imm, Reg16 r, const MemoryRef& mr);
@@ -2874,44 +2874,44 @@ X64_INSTRS()
 #undef X64_INSTR_NO_ARGS
 #undef X64_INSTR_I
 #undef X64_INSTR_R_Q
-#undef X64_INSTR_R_D
+#undef X64_INSTR_R_L
 #undef X64_INSTR_R_W
 #undef X64_INSTR_R_B
 #undef X64_INSTR_M_Q
-#undef X64_INSTR_M_D
+#undef X64_INSTR_M_L
 #undef X64_INSTR_M_W
 #undef X64_INSTR_M_B
 #undef X64_INSTR_RR_Q
-#undef X64_INSTR_RR_D
+#undef X64_INSTR_RR_L
 #undef X64_INSTR_RR_W
 #undef X64_INSTR_RR_B
 #undef X64_INSTR_RR_XMM
 #undef X64_INSTR_IR_Q
-#undef X64_INSTR_IR_D
+#undef X64_INSTR_IR_L
 #undef X64_INSTR_IR_W
 #undef X64_INSTR_IR_B
 #undef X64_INSTR_IR_XMM
 #undef X64_INSTR_IM_Q
-#undef X64_INSTR_IM_D
+#undef X64_INSTR_IM_L
 #undef X64_INSTR_IM_W
 #undef X64_INSTR_IM_B
 #undef X64_INSTR_RM_Q
-#undef X64_INSTR_RM_D
+#undef X64_INSTR_RM_L
 #undef X64_INSTR_RM_W
 #undef X64_INSTR_RM_B
 #undef X64_INSTR_RM_XMM
 #undef X64_INSTR_MR_Q
-#undef X64_INSTR_MR_D
+#undef X64_INSTR_MR_L
 #undef X64_INSTR_MR_W
 #undef X64_INSTR_MR_B
 #undef X64_INSTR_MR_XMM
 #undef X64_INSTR_IRR_Q
-#undef X64_INSTR_IRR_D
+#undef X64_INSTR_IRR_L
 #undef X64_INSTR_IRR_W
 #undef X64_INSTR_IRR_B
 #undef X64_INSTR_IRR_XMM
 #undef X64_INSTR_IRM_Q
-#undef X64_INSTR_IRM_D
+#undef X64_INSTR_IRM_L
 #undef X64_INSTR_IRM_W
 #undef X64_INSTR_IRM_B
 #undef X64_INSTR_IMR_XMM
@@ -2929,65 +2929,65 @@ X64_INSTRS()
   void cmpxchg8b(const MemoryRef& mr);
 
   void imulq(Reg64 rsrc, Reg64 rdest);
-  void imuld(Reg32 rsrc, Reg32 rdest);
+  void imull(Reg32 rsrc, Reg32 rdest);
   void imulw(Reg16 rsrc, Reg16 rdest);
 
   void movzxwq(Reg16 rsrc, Reg64 rdest);
-  void movzxwd(Reg16 rsrc, Reg32 rdest);
+  void movzxwl(Reg16 rsrc, Reg32 rdest);
   void movzxbq(Reg8 rsrc, Reg64 rdest);
-  void movzxbd(Reg8 rsrc, Reg32 rdest);
+  void movzxbl(Reg8 rsrc, Reg32 rdest);
   void movzxbw(Reg8 rsrc, Reg16 rdest);
 
   void movsxdq(Reg32 rsrc, Reg64 rdest);
   void movsxwq(Reg16 rsrc, Reg64 rdest);
-  void movsxwd(Reg16 rsrc, Reg32 rdest);
+  void movsxwl(Reg16 rsrc, Reg32 rdest);
   void movsxbq(Reg8 rsrc, Reg64 rdest);
-  void movsxbd(Reg8 rsrc, Reg32 rdest);
+  void movsxbl(Reg8 rsrc, Reg32 rdest);
   void movsxbw(Reg8 rsrc, Reg16 rdest);
 
   void movq(Reg64 rsrc, RegXMM rdest);
   void movq(RegXMM rsrc, Reg64 rdest);
-  void movd(Reg32 rsrc, RegXMM rdest);
-  void movd(RegXMM rsrc, Reg32 rdest);
+  void movl(Reg32 rsrc, RegXMM rdest);
+  void movl(RegXMM rsrc, Reg32 rdest);
 
   void cvtsi2sdq(Reg64 rsrc, RegXMM rdest);
-  void cvtsi2sdd(Reg32 rsrc, RegXMM rdest);
+  void cvtsi2sdl(Reg32 rsrc, RegXMM rdest);
   void cvttsd2siq(RegXMM rsrc, Reg64 rdest);
-  void cvttsd2sid(RegXMM rsrc, Reg32 rdest);
+  void cvttsd2sil(RegXMM rsrc, Reg32 rdest);
 
   void movq(RegXMM r, const MemoryRef& mr);
-  void movd(RegXMM r, const MemoryRef& mr);
+  void movl(RegXMM r, const MemoryRef& mr);
 
   void imulq(const MemoryRef& mr, Reg64 r);
-  void imuld(const MemoryRef& mr, Reg32 r);
+  void imull(const MemoryRef& mr, Reg32 r);
   void imulw(const MemoryRef& mr, Reg16 r);
 
   void movzxwq(const MemoryRef& mr, Reg64 r);
-  void movzxwd(const MemoryRef& mr, Reg32 r);
+  void movzxwl(const MemoryRef& mr, Reg32 r);
   void movzxbq(const MemoryRef& mr, Reg64 r);
-  void movzxbd(const MemoryRef& mr, Reg32 r);
+  void movzxbl(const MemoryRef& mr, Reg32 r);
   void movzxbw(const MemoryRef& mr, Reg16 r);
   void movsxdq(const MemoryRef& mr, Reg64 r);
   void movsxwq(const MemoryRef& mr, Reg64 r);
-  void movsxwd(const MemoryRef& mr, Reg32 r);
+  void movsxwl(const MemoryRef& mr, Reg32 r);
   void movsxbq(const MemoryRef& mr, Reg64 r);
-  void movsxbd(const MemoryRef& mr, Reg32 r);
+  void movsxbl(const MemoryRef& mr, Reg32 r);
   void movsxbw(const MemoryRef& mr, Reg16 r);
 
   void movq(const MemoryRef& mr, RegXMM r);
-  void movd(const MemoryRef& mr, RegXMM r);
+  void movl(const MemoryRef& mr, RegXMM r);
 
   void cvtsi2sdq(const MemoryRef& mr, RegXMM r);
-  void cvtsi2sdd(const MemoryRef& mr, RegXMM r);
+  void cvtsi2sdl(const MemoryRef& mr, RegXMM r);
   void cvttsd2siq(const MemoryRef& mr, Reg64 r);
-  void cvttsd2sid(const MemoryRef& mr, Reg32 r);
+  void cvttsd2sil(const MemoryRef& mr, Reg32 r);
 
   void imulq(int64_t imm, Reg64 rsrc, Reg64 rdest);
-  void imuld(int64_t imm, Reg32 rsrc, Reg32 rdest);
+  void imull(int64_t imm, Reg32 rsrc, Reg32 rdest);
   void imulw(int64_t imm, Reg16 rsrc, Reg16 rdest);
 
   void imulq(int64_t imm, const MemoryRef& mr, Reg64 r);
-  void imuld(int64_t imm, const MemoryRef& mr, Reg32 r);
+  void imull(int64_t imm, const MemoryRef& mr, Reg32 r);
   void imulw(int64_t imm, const MemoryRef& mr, Reg16 r);
 
   void jcc(int cc, int64_t imm);
@@ -2998,11 +2998,11 @@ X64_INSTRS()
   void setccb(int cc, const MemoryRef& mr);
 
   void cmovccq(int cc, Reg64 rsrc, Reg64 rdest);
-  void cmovccd(int cc, Reg32 rsrc, Reg32 rdest);
+  void cmovccl(int cc, Reg32 rsrc, Reg32 rdest);
   void cmovccw(int cc, Reg16 rsrc, Reg16 rdest);
 
   void cmovccq(int cc, const MemoryRef& mr, Reg64 r);
-  void cmovccd(int cc, const MemoryRef& mr, Reg32 r);
+  void cmovccl(int cc, const MemoryRef& mr, Reg32 r);
   void cmovccw(int cc, const MemoryRef& mr, Reg16 r);
 };
 
